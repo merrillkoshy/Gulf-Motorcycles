@@ -15,6 +15,10 @@ const Banner = () => {
                     booking of your motorcycle services including Pick-and-Drop
                     of your vehicle !
                   </p>
+                  <div className="badgings">
+                    <img src="/images/AppStoreBadge.png" alt="image" />
+                    <img src="/images/PlayStoreBadge.png" alt="image" />
+                  </div>
                 </div>
               </div>
 
@@ -31,6 +35,22 @@ const Banner = () => {
 
       <div className="creative-shape">
         <img src="/images/coglines.png" alt="bg" />
+      </div>
+      <div className="shape1">
+        <img src="/images/cogwheel.svg" alt="img" style={{ opacity: 0.2 }} />
+      </div>
+      <div className="shape2">
+        <img src="/images/bike.svg" alt="img" />
+      </div>
+      <div className="shape3">
+        <img src="/images/cogwheel.svg" alt="img" style={{ opacity: 0.2 }} />
+      </div>
+
+      <div className="shape8 rotateme">
+        <img src="/images/tire.svg" alt="shape" />
+      </div>
+      <div className="shape9">
+        <img src="/images/engine.svg" alt="shape" style={{ width: "100px" }} />
       </div>
       {/* <div className="bg-gray shape-1"></div>
       <div className="shape1">

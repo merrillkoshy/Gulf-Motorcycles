@@ -63,7 +63,7 @@ const Navbar = (props) => {
         <div id="navbar" className={`crake-nav ${layOutCls}`}>
           <div className="container">
             <nav className="navbar navbar-expand-md navbar-light">
-              <Link href="/saas">
+              <Link href="/">
                 <a className="navbar-brand">
                   <img src={logo} alt="logo" />
                 </a>

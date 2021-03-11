@@ -72,8 +72,8 @@ Default CSS
 @import "~react-image-lightbox/style.css";
 @import "~react-accessible-accordion/dist/fancy-example.css";
 // @import "../css/style.css";
-@import "../css/responsive.css";
 
+@import "../css/responsive.scss";
 @import "landingpage";
 $font_family: "Nunito", sans-serif;
 $template_color: #424242;
@@ -239,7 +239,7 @@ button {
   .bar {
     height: 4px;
     width: 85px;
-    background: $template_color;
+    background: $template_color2;
     margin: 20px auto 25px;
     position: relative;
     border-radius: 5px;
@@ -318,6 +318,7 @@ Preloader CSS
     display: inline-block;
     width: 80px;
     height: 80px;
+
     position: absolute;
     left: 0;
     right: 0;
@@ -398,7 +399,7 @@ Navbar CSS
             top: 9px;
             width: 6px;
             height: 6px;
-            background: $white_color;
+            background: $template_color2;
             opacity: 0;
             border-radius: 50%;
             visibility: hidden;
@@ -908,7 +909,7 @@ Navbar CSS
             width: 70px;
             height: 2px;
             border-radius: 5px;
-            background: $template_color;
+            background: $template_color2;
             content: "";
           }
           &::after {
@@ -974,7 +975,7 @@ Navbar CSS
                 i {
                   color: $white_color;
                   border-color: $white_color;
-                  background: $template_color;
+                  background: $template_color2;
                 }
               }
               &:last-child {
@@ -1000,8 +1001,8 @@ Navbar CSS
                 &:hover,
                 &:focus {
                   color: $white_color;
-                  background: $template_color;
-                  border-color: $template_color;
+                  background: $template_color2;
+                  border-color: $template_color2;
                 }
               }
             }
@@ -1036,7 +1037,7 @@ Navbar CSS
       }
     }
     h2 {
-      background: linear-gradient(142deg, #3ec9cf 0%, #2d136a 100%);
+      background: linear-gradient(142deg, #0c0c0c 0%, #424242 100%);
       padding: 30px 25px;
 
       img {
@@ -1143,6 +1144,12 @@ Main Banner CSS
         right: 0;
         top: 0;
         height: 100%;
+      }
+    }
+    .badgings {
+      float: right;
+      img {
+        max-width: 153px;
       }
     }
   }
@@ -1990,7 +1997,7 @@ Features CSS
     }
   }
   &.book-features {
-    background: #f9fafc url("/images/bg-point.png") no-repeat fixed right -600px
+    background: #f9fafc url("/images/motorCog.svg") no-repeat fixed right -600px
       center/ auto;
   }
 }
@@ -6923,7 +6930,7 @@ Footer CSS
   }
   &.bg-image {
     background: {
-      image: url(/images/footer-shape.png);
+      image: url(/images/footer-shape.svg);
       position: center;
       size: cover;
       repeat: no-repeat;
@@ -6931,8 +6938,6 @@ Footer CSS
   }
 }
 .copyright-area {
-  padding: 30px 0;
-  margin-top: 100px;
   border-top: 1px solid #eeeeee;
 
   ul {

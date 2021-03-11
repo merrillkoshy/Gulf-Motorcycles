@@ -1,11 +1,12 @@
 class Loader extends React.Component {
-    render(){
-        return (
-            <div className="preloader-area">
-			    <div className="lds-hourglass"></div>
-		    </div>
-        );
-    }
+  render() {
+    return (
+      <div className="preloader-area">
+        {/* <img src="/images/loader.svg" /> */}
+        <div className="lds-hourglass"></div>
+      </div>
+    );
+  }
 }
- 
+
 export default Loader;

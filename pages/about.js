@@ -2,29 +2,19 @@ import React from "react";
 import Navbar from "../components/Layouts/Navbar";
 import Footer from "../components/Layouts/Footer";
 import Banner from "../components/About/Banner";
-import CtaCard from "../components/About/CtaCard";
-import Partner from "../components/About/Partner";
-import Platform from "../components/About/Platform";
-import AboutContentTwo from "../components/About/AboutContentTwo";
-import TeamTwo from "../components/About/TeamTwo";
-import FeedbackTwo from "../components/About/FeedbackTwo";
 
-class AboutTwo extends React.Component {
-  render() {
-    return (
-      <React.Fragment>
-        <Navbar />
-        <Banner />
-        <AboutContentTwo />
-        <TeamTwo />
-        <CtaCard />
-        <FeedbackTwo />
-        <Partner />
-        <Platform />
-        <Footer />
-      </React.Fragment>
-    );
-  }
-}
+import AboutContent from "../components/About/AboutContent";
 
-export default AboutTwo;
+const About = () => {
+  return (
+    <React.Fragment>
+      <Navbar />
+      <Banner />
+      <AboutContent />
+
+      <Footer />
+    </React.Fragment>
+  );
+};
+
+export default About;
