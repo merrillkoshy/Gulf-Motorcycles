@@ -44,11 +44,7 @@ const Navbar = (props) => {
   let { products } = props;
 
   let layOutCls = "";
-  let logo = "/images/logo.png";
-  if (pathname == "/digital-marketing") {
-    layOutCls = "marketing-navbar";
-    logo = "/images/logo-light.png";
-  }
+  let logo = "/images/mono.png";
 
   const classOne = collapsed
     ? "collapse navbar-collapse"
@@ -81,7 +77,10 @@ const Navbar = (props) => {
               >
                 <span className="navbar-toggler-icon"></span>
               </button>
-
+              <div className="brand-container">
+                <div className="col brand-name">Gulf Motorcycles</div>
+                <div className="col brand-sub">Motorcycle Repairs</div>
+              </div>
               <div className={classOne} id="navbarSupportedContent">
                 <ul className="navbar-nav nav ml-auto">
                   <li className="nav-item">

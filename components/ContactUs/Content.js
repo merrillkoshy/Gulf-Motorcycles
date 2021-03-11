@@ -28,7 +28,13 @@ class Content extends Component {
                   <i className="icofont-google-map"></i>
                 </div>
                 <h3>We are Here</h3>
-                <p>Harebs Building Warehouse 10 Al Quoz Industrial 1 - Dubai</p>
+                <Link href="https://goo.gl/maps/E8hFnyMBe4XR22HWA">
+                  <a>
+                    <p>
+                      Harebs Building Warehouse 10 Al Quoz Industrial 1 - Dubai
+                    </p>{" "}
+                  </a>
+                </Link>
               </div>
             </div>
 

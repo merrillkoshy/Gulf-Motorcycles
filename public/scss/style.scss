@@ -374,6 +374,15 @@ Navbar CSS
         height: auto;
       }
     }
+    .brand-container {
+      .brand-name {
+        color: $template_color2;
+        font-size: 26px;
+      }
+      .brand-sub {
+        color: $white-color;
+      }
+    }
     ul {
       list-style-type: none;
     }

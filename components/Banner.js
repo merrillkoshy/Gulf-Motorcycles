@@ -24,8 +24,8 @@ const Banner = () => {
 
               <div className="col-lg-6 col-md-12">
                 <div className="app-image">
-                  <img src="/images/app-img4.png" alt="image" />
-                  <img src="/images/app-img2.png" alt="image" />
+                  <img src="/images/app-screen2.png" alt="image" />
+                  <img src="/images/app-screen1.png" alt="image" />
                 </div>
               </div>
             </div>
