@@ -1,0 +1,265 @@
+$font_family: "Nunito", sans-serif;
+$template_color: #424242;
+$template_color2: #ff2800;
+$white_color: #ffffff;
+$black_color: #000000;
+$paragraph_color: #818992;
+$transition: 0.5s;
+
+.admin-login {
+  .logo-container {
+    height: 200px;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  .form-container {
+    margin-top: 60px;
+  }
+}
+.admin-dashboard {
+  display: table;
+  width: 100vw;
+  min-height: 100vh;
+
+  nav {
+    .navbar {
+      background: $template_color;
+      border-radius: 10px;
+      .adminTag {
+        color: $white_color;
+      }
+    }
+  }
+  .dashboard,
+  .userslist,
+  .admin-bookinglist {
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+  }
+  .footer-area {
+    display: table-row;
+  }
+  .dash {
+    position: relative;
+    top: 10vh;
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .progress {
+      .progress-bar {
+        background-color: $template_color2;
+        .bg-main {
+          background-color: $template_color2;
+        }
+      }
+    }
+    .sidenav {
+      background: $template_color;
+      height: fit-content;
+      border-radius: 10px;
+      li {
+        position: relative;
+        padding: 15px 0 !important;
+
+        a {
+          font: {
+            weight: 600;
+            size: 17px;
+          }
+          color: $white_color !important;
+          padding: 0 0 !important;
+          margin: 0 17px;
+          position: relative;
+
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 9px;
+            width: 6px;
+            height: 6px;
+            background: $template_color2;
+            opacity: 0;
+            border-radius: 50%;
+            visibility: hidden;
+            transition: 0.4s;
+          }
+          &:hover {
+            &::before {
+              opacity: 1;
+              visibility: visible;
+              left: -12px;
+            }
+          }
+          &.active {
+            &::before {
+              opacity: 1;
+              visibility: visible;
+              left: -12px;
+            }
+          }
+        }
+        &:hover a {
+          &::before {
+            opacity: 1;
+            visibility: visible;
+            left: -12px;
+          }
+        }
+        .dropdown_menu {
+          box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
+          background: $white_color;
+          position: absolute;
+          top: 80px;
+          left: 0;
+          width: 220px;
+          z-index: 99;
+          padding: 20px 0;
+          opacity: 0;
+          border-radius: 5px;
+          visibility: hidden;
+          transition: all 0.3s ease-in-out;
+
+          li {
+            position: relative;
+            padding: 0 !important;
+
+            a {
+              font: {
+                size: 15px;
+              }
+              padding: 5px 15px !important;
+              margin: 0;
+              display: block;
+              color: #716c80 !important;
+
+              &::before {
+                left: 0;
+                background: $template_color;
+                opacity: 0;
+                visibility: hidden;
+                top: 12px;
+              }
+              &:hover {
+                &::before {
+                  left: 13px;
+                  opacity: 1;
+                  visibility: visible;
+                }
+                color: $template_color !important;
+                padding-left: 25px !important;
+              }
+              &.active {
+                color: $template_color !important;
+                padding-left: 25px !important;
+
+                &::before {
+                  left: 13px;
+                  opacity: 1;
+                  visibility: visible;
+                }
+              }
+            }
+            .dropdown_menu {
+              position: absolute;
+              left: 95%;
+              top: 0 !important;
+              opacity: 0 !important;
+              visibility: hidden !important;
+
+              li {
+                a {
+                  padding-left: 15px !important;
+                  color: #716c80 !important;
+
+                  &::before {
+                    opacity: 0;
+                    left: 0;
+                    visibility: hidden;
+                  }
+
+                  &:hover {
+                    color: $template_color !important;
+                    padding-left: 25px !important;
+
+                    &::before {
+                      left: 13px;
+                      opacity: 1;
+                      visibility: visible;
+                    }
+                  }
+                  &.active {
+                    color: $template_color !important;
+                    padding-left: 25px !important;
+
+                    &::before {
+                      left: 13px;
+                      opacity: 1;
+                      visibility: visible;
+                    }
+                  }
+                }
+              }
+            }
+            &:hover {
+              .dropdown_menu {
+                opacity: 1 !important;
+                visibility: visible !important;
+                top: -20px !important;
+              }
+              a {
+                padding-left: 25px !important;
+                color: $template_color !important;
+
+                &::before {
+                  left: 13px;
+                  visibility: visible;
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+        &:hover {
+          ul {
+            opacity: 1 !important;
+            visibility: visible !important;
+            top: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+.admin-bookinglist {
+  .bookings {
+    .booking-wrapper {
+      border: 1px solid;
+
+      padding: 6px;
+      margin: 0.3rem 0;
+      border-radius: 0.4rem;
+    }
+    .ref {
+      cursor: pointer;
+    }
+    .badge {
+      margin-right: 10px;
+    }
+    .open::marker {
+      color: green;
+    }
+    .ongoing {
+      ::marker {
+        color: yellow;
+      }
+    }
+    .closed::marker {
+      color: gray;
+    }
+  }
+}

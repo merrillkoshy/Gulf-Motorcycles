@@ -3,45 +3,37 @@ import React, { useEffect, useState } from "react";
 import Link from "../../utils/ActiveLink";
 import SideDrawer from "./SideDrawer";
 import SearchForm from "./SearchForm";
+import { useRouter } from "next/router";
+import firebase from "../../lib/firebaseConfig";
+import "firebase/auth";
 
 const Navbar = (props) => {
   const [_isMounted, setIsMounted] = useState(false);
   const [drawer, setDrawer] = useState(false);
-  const [searchForm, setSearchForm] = useState(false);
   const [collapsed, setCollapsed] = useState(true);
-
+  const router = useRouter();
   useEffect(() => {
     setIsMounted(true);
 
-    let elementId = document.getElementById("navbar");
-    document.addEventListener("scroll", () => {
-      if (window.scrollY > 170) {
-        elementId.classList.add("is-sticky");
-      } else {
-        elementId.classList.remove("is-sticky");
-      }
-    });
-    window.scrollTo(0, 0);
     return () => {
       setIsMounted(false);
     };
   }, []);
 
+  const logout = () => {
+    firebase
+      .auth()
+      .signOut()
+      .then(() => {
+        router.replace("/admin");
+      });
+  };
   const toggleNavbar = () => {
     setCollapsed(!collapsed);
   };
 
-  const handleDrawer = () => {
-    setDrawer(!drawer);
-  };
-
-  const handleSearchForm = () => {
-    setSearchForm(!searchForm);
-  };
-
   let layOutCls = "";
   let logo = "/images/mono.png";
-
   const classOne = collapsed
     ? "collapse navbar-collapse"
     : "collapse navbar-collapse show ";
@@ -78,34 +70,58 @@ const Navbar = (props) => {
               >
                 <i className="navbar-toggler-icon "></i>
               </button>
-
               <div className={classOne} id="navbarSupportedContent">
-                <ul className="navbar-nav nav ml-auto">
+                <ul className="navbar-nav nav ml-auto  d-block d-xs-none d-md-none ">
                   <li className="nav-item">
-                    <Link activeClassName="active" href="/">
-                      <a className="nav-link">Home</a>
-                    </Link>
+                    <a
+                      className="nav-link"
+                      onClick={(e) =>
+                        props.currentTab(e.currentTarget.innerText)
+                      }
+                    >
+                      Dashboard
+                    </a>
                   </li>
                   <li className="nav-item">
-                    <Link activeClassName="active" href="/about">
-                      <a className="nav-link">About Us</a>
-                    </Link>
+                    <a
+                      className="nav-link"
+                      onClick={(e) =>
+                        props.currentTab(e.currentTarget.innerText)
+                      }
+                    >
+                      Users
+                    </a>
                   </li>
                   <li className="nav-item">
-                    <Link activeClassName="active" href="/services">
-                      <a className="nav-link">Services</a>
-                    </Link>
+                    <a
+                      className="nav-link"
+                      onClick={(e) =>
+                        props.currentTab(e.currentTarget.innerText)
+                      }
+                    >
+                      Bookings
+                    </a>
                   </li>
-
                   <li className="nav-item">
-                    <Link activeClassName="active" href="/contact">
-                      <a className="nav-link">Contact</a>
-                    </Link>
+                    <a
+                      className="nav-link"
+                      onClick={(e) =>
+                        props.currentTab(e.currentTarget.innerText)
+                      }
+                    >
+                      Services
+                    </a>
                   </li>
                 </ul>
               </div>
-              <div className="mr-auto others-option">
-                <ul className="navbar-nav">
+              <div className="col-2 adminTag">{props.userName}</div>
+              <div>
+                <div className="justify-content-right align-items-right">
+                  <button onClick={logout} className="btn btn-primary">
+                    Logout
+                  </button>
+                </div>
+                {/* <ul className="navbar-nav">
                   <li className="header-search-box">
                     <Link activeClassName="active" href="#">
                       <a
@@ -126,15 +142,12 @@ const Navbar = (props) => {
                       <span className="bar-3"></span>
                     </div>
                   </li>
-                </ul>
+                </ul> */}
               </div>
             </nav>
           </div>
         </div>
       </header>
-
-      {drawer ? <SideDrawer onClick={handleDrawer} /> : ""}
-      {searchForm ? <SearchForm onClick={handleSearchForm} /> : ""}
     </React.Fragment>
   );
 };

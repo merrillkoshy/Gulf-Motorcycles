@@ -75,6 +75,7 @@ Default CSS
 
 @import "../css/responsive.scss";
 @import "landingpage";
+@import "admin";
 $font_family: "Nunito", sans-serif;
 $template_color: #424242;
 $template_color2: #ff2800;
@@ -5736,7 +5737,10 @@ Page Title CSS
     bottom: 120px;
   }
   text-align: center;
-
+  .legal {
+    padding-top: 150px;
+    padding-bottom: 60px;
+  }
   h2 {
     margin: 0;
     font: {

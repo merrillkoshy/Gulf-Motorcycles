@@ -90,12 +90,12 @@ const Footer = () => {
             <div className="col-lg-6 col-md-6">
               <ul>
                 <li>
-                  <Link href="#">
+                  <Link href="/terms-and-conditions">
                     <a>Terms & Conditions</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="#">
+                  <Link href="/privacy-policy">
                     <a>Privacy Policy</a>
                   </Link>
                 </li>
