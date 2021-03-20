@@ -74,12 +74,14 @@ const Services = (props) => {
         show={show}
         servicesRef={servicesRef}
         services={services}
+        setServices={setServices}
         onHide={() => setShow(false)}
       />
       <DeleteService
         show={showForDelete}
         servicesRef={servicesRef}
         services={services}
+        setServices={setServices}
         onHide={() => setShowForDelete(false)}
       />
       <Table className="table">

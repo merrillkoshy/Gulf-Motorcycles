@@ -7,7 +7,7 @@ import { ToastContainer, toast } from "react-toastify";
 const DeleteService = (props) => {
   const [itemCode, setItemCode] = useState(null);
   const [itemCodes, setItemCodes] = useState(["GML"]);
-
+  const servicesRef = firebase.database().ref("/services");
   const headers = [
     "Item Code",
     "Item Name",
@@ -15,6 +15,21 @@ const DeleteService = (props) => {
     "Discount",
     "Sales Price",
   ];
+  const servicesList = () => {
+    var serviceList = [];
+
+    servicesRef
+      .once("value", (snapshot) => {
+        snapshot.forEach((snap) => {
+          const svObject = snap.val();
+
+          serviceList.push(svObject.itemCode);
+        });
+      })
+      .then(() => {
+        setItemCodes(serviceList);
+      });
+  };
 
   const deleteService = () => {
     firebase
@@ -23,6 +38,17 @@ const DeleteService = (props) => {
       .child(itemCode)
       .remove()
       .then(() => {
+        var serviceList = [];
+        servicesRef
+          .once("value", (snapshot) => {
+            snapshot.forEach((snap) => {
+              const svObject = snap.val();
+              serviceList.push(svObject);
+            });
+          })
+          .then(() => {
+            props?.setServices(serviceList);
+          });
         toast("Service Deleted! ", {
           position: "bottom-center",
           type: "success",
@@ -31,11 +57,8 @@ const DeleteService = (props) => {
   };
 
   useEffect(() => {
-    setItemCodes(
-      props?.services?.map((service) => {
-        return service.itemCode;
-      })
-    );
+    servicesList();
+
     return () => {
       setItemCode("GML");
     };
@@ -63,8 +86,12 @@ const DeleteService = (props) => {
             <Table className="table">
               <Thead>
                 <Tr>
-                  {headers.map((head) => {
-                    return <Th scope="col">{head}</Th>;
+                  {headers.map((head, i) => {
+                    return (
+                      <Th key={`head${i}`} scope="col">
+                        {head}
+                      </Th>
+                    );
                   })}
                 </Tr>
               </Thead>

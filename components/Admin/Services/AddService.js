@@ -21,6 +21,20 @@ const AddService = (props) => {
         published: false,
       })
       .then(() => {
+        var serviceList = [];
+        firebase
+          .database()
+          .ref("/services")
+          .once("value", (snapshot) => {
+            snapshot.forEach((snap) => {
+              const svObject = snap.val();
+
+              serviceList.push(svObject);
+            });
+          })
+          .then(() => {
+            props?.setServices(serviceList);
+          });
         toast("Service registered! ", {
           position: "bottom-center",
           type: "success",
