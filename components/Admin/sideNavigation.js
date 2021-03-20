@@ -36,6 +36,14 @@ const SideNavigation = (props) => {
             Services
           </a>
         </li>
+        <li className="nav-item">
+          <a
+            className="nav-link"
+            onClick={(e) => props.currentTab(e.currentTarget.innerText)}
+          >
+            Main Services
+          </a>
+        </li>
       </ul>
     </div>
   );

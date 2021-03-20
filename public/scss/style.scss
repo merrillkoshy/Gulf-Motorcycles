@@ -136,6 +136,13 @@ button {
   outline: 0 !important;
 }
 /* btn btn-primary */
+.btn {
+  &:hover,
+  &:focus,
+  &:active {
+    transform: translateY(-5px);
+  }
+}
 .btn-primary {
   color: $white_color;
   background-color: $template_color2;

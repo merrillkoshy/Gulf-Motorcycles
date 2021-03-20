@@ -1,58 +1,66 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
+import firebase from "../lib/firebaseConfig";
 
-class Features extends Component {
-  render() {
-    return (
-      <section className="features-area book-features ptb-100">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-4 col-md-6">
-              <div className="single-features-box">
-                <div className="icon">
-                  <i className="icofont-info"></i>
-                </div>
-                <h3>Main Feature 1</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-            </div>
+const Features = () => {
+  const [services, setServices] = useState([]);
+  var servicesRef = firebase.database().ref("/mainServices");
 
-            <div className="col-lg-4 col-md-6">
-              <div className="single-features-box">
-                <div className="icon">
-                  <i className="icofont-motor-bike"></i>
-                </div>
-                <h3>Main Feature 2</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-            </div>
+  const servicesList = () => {
+    var serviceList = [];
 
-            <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
-              <div className="single-features-box">
-                <div className="icon">
-                  <i className="icofont-wrench"></i>
+    servicesRef
+      .once("value", (snapshot) => {
+        snapshot.forEach((snap) => {
+          const svObject = snap.val();
+
+          serviceList.push(svObject);
+        });
+      })
+      .then(() => {
+        setServices(serviceList);
+      });
+  };
+
+  useEffect(() => {
+    servicesList();
+  }, []);
+  return (
+    <section className="features-area book-features ptb-100">
+      <div className="container">
+        <div className="row">
+          {services &&
+            services.map((service, i) => {
+              return (
+                <div key={`serve${i}`} className="col-lg-4 col-md-6">
+                  <div className="single-features-box">
+                    <div className="icon">
+                      <i className="icofont-motor-bike"></i>
+                    </div>
+                    <h3 style={{ textTransform: "capitalize" }}>
+                      {service?.serviceName}
+                    </h3>
+                    <ul>
+                      {service?.services.map((service, i) => {
+                        return (
+                          <li key={service?.itemName}>{service?.itemName}</li>
+                        );
+                      })}
+                    </ul>
+                    <a>
+                      <strong>Service cost</strong> : AED {service?.salesPrice}
+                    </a>
+                  </div>
                 </div>
-                <h3>Main Feature 3</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-            </div>
-          </div>
+              );
+            })}
         </div>
+      </div>
 
-        <div className="features-inner-area">
-          <div className="container">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </div>
-          {/* <div className="container">
+      <div className="features-inner-area">
+        <div className="container">
+          *Cost of parts and labor are charged seperately
+        </div>
+        {/* <div className="container">
             <div className="row h-100 justify-content-center align-items-center">
               <div className="col-lg-6 col-md-12">
                 <div className="features-inner-content">
@@ -101,9 +109,9 @@ class Features extends Component {
               </div>
             </div>
           </div> */}
-        </div>
+      </div>
 
-        {/* <div className="shape7">
+      {/* <div className="shape7">
           <img src="/images/shape7.png" alt="shape" />
         </div>
         <div className="shape3">
@@ -125,9 +133,8 @@ class Features extends Component {
         <div className="shape11 rotateme">
           <img src="/images/shape11.svg" alt="shape" />
         </div> */}
-      </section>
-    );
-  }
-}
+    </section>
+  );
+};
 
 export default Features;

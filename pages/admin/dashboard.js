@@ -9,6 +9,10 @@ import UserList from "../../components/Admin/UserList";
 import BookingList from "../../components/Admin/Booking";
 import Services from "../../components/Admin/Services";
 import Link from "next/link";
+import MainServices from "../../components/Admin/MainServices";
+// import "react-super-responsive-table/dist/SuperResponsiveTableStyle.css";
+import { useRouter } from "next/router";
+
 const Admin = () => {
   var userAuth =
     firebase.auth().currentUser?.uid === process.env.NEXT_PUBLIC_ADMIN_UID;
@@ -18,6 +22,17 @@ const Admin = () => {
   const [openBookings, setOpenBookings] = useState(0);
   const [ongoingBookings, setOngoingBookings] = useState(0);
   const [closedBookings, setClosedBookings] = useState(0);
+  const router = useRouter();
+
+  const logout = () => {
+    firebase
+      .auth()
+      .signOut()
+      .then(() => {
+        router.replace("/admin");
+      });
+  };
+
   var usersRef = firebase.database().ref("/users");
   const usersList = () => {
     var userList = [];
@@ -73,6 +88,7 @@ const Admin = () => {
       setOpenBookings(0);
       setOngoingBookings(0);
       setClosedBookings(0);
+      logout();
     };
   }, []);
 
@@ -99,6 +115,8 @@ const Admin = () => {
       case "Services":
         return <Services />;
         break;
+      case "Main Services":
+        return <MainServices />;
       default:
         return <Content />;
         break;

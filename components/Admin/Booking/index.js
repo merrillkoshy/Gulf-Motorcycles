@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Table, Thead, Tbody, Tr, Th, Td } from "react-super-responsive-table";
-import "react-super-responsive-table/dist/SuperResponsiveTableStyle.css";
+// import "react-super-responsive-table/dist/SuperResponsiveTableStyle.css";
 
 import Listing from "./Listing";
 
@@ -41,6 +41,7 @@ const BookingList = (props) => {
                     <Td>{user?.phoneNumber}</Td>
                     <Td className="bookings">
                       <Listing
+                        key={i + user?.uid + "list"}
                         userName={user?.username}
                         uid={user?.uid}
                         usersRef={usersRef}

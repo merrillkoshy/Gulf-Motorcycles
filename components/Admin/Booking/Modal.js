@@ -1,7 +1,7 @@
 import Modal from "react-bootstrap/Modal";
 import React, { useState, useEffect } from "react";
 import { Table, Thead, Tbody, Tr, Th, Td } from "react-super-responsive-table";
-import "react-super-responsive-table/dist/SuperResponsiveTableStyle.css";
+// import "react-super-responsive-table/dist/SuperResponsiveTableStyle.css";
 import BookingStatusSwitcher from "./BookingStatusSwitcher";
 
 const ModalBooking = (props) => {
@@ -46,9 +46,7 @@ const ModalBooking = (props) => {
                 <Td scope="col">{book?.address}</Td>
                 <Td scope="col">{book?.serviceName}</Td>
                 <Td scope="col">{book?.vehicleName}</Td>
-                <Td scope="col">
-                  {book?.pickAndDrop ? book?.pickAndDrop : "No"}
-                </Td>
+                <Td scope="col">{book?.pickAndDrop ? "Yes" : "No"}</Td>
                 <Td scope="col">{book?.serviceCharge}</Td>
                 <Td scope="col">{book?.bookingStatus}</Td>
               </Tr>

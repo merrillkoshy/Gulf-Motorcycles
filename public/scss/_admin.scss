@@ -1,3 +1,6 @@
+@import "react-super-responsive-table/dist/SuperResponsiveTableStyle.css";
+@import "react-toastify/dist/ReactToastify.css";
+
 $font_family: "Nunito", sans-serif;
 $template_color: #424242;
 $template_color2: #ff2800;
@@ -34,6 +37,8 @@ $transition: 0.5s;
   }
   .dashboard,
   .userslist,
+  .serviceslist,
+  .main-services-list,
   .admin-bookinglist {
     padding: 10px;
     border: 1px solid rgba(0, 0, 0, 0.125);
@@ -260,6 +265,18 @@ $transition: 0.5s;
     }
     .closed::marker {
       color: gray;
+    }
+  }
+}
+.main-services-list {
+  .serviceName {
+    text-transform: capitalize;
+  }
+}
+.serviceslist {
+  .hideInMobile {
+    div {
+      display: none !important;
     }
   }
 }
