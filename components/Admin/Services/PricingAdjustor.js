@@ -57,7 +57,7 @@ const PricingAdjustor = (props) => {
       <Td>
         <div className="row">
           <div className="col">
-            <strong>{mrp - discount}</strong>
+            <strong>{mrp - discount ? mrp - discount : 0}</strong>
           </div>
           <div className="col">
             <button

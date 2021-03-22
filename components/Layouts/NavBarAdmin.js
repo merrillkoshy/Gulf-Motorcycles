@@ -71,13 +71,14 @@ const Navbar = (props) => {
                 <i className="navbar-toggler-icon "></i>
               </button>
               <div className={classOne} id="navbarSupportedContent">
-                <ul className="navbar-nav nav ml-auto  d-block d-xs-none d-md-none ">
+                <ul className="navbar-nav nav ml-auto  d-block d-xs-none d-sm-none d-md-none ">
                   <li className="nav-item">
                     <a
                       className="nav-link"
-                      onClick={(e) =>
-                        props.currentTab(e.currentTarget.innerText)
-                      }
+                      onClick={(e) => {
+                        props.currentTab(e.currentTarget.innerText);
+                        toggleNavbar();
+                      }}
                     >
                       Dashboard
                     </a>
@@ -85,9 +86,10 @@ const Navbar = (props) => {
                   <li className="nav-item">
                     <a
                       className="nav-link"
-                      onClick={(e) =>
-                        props.currentTab(e.currentTarget.innerText)
-                      }
+                      onClick={(e) => {
+                        props.currentTab(e.currentTarget.innerText);
+                        toggleNavbar();
+                      }}
                     >
                       Users
                     </a>
@@ -95,9 +97,10 @@ const Navbar = (props) => {
                   <li className="nav-item">
                     <a
                       className="nav-link"
-                      onClick={(e) =>
-                        props.currentTab(e.currentTarget.innerText)
-                      }
+                      onClick={(e) => {
+                        props.currentTab(e.currentTarget.innerText);
+                        toggleNavbar();
+                      }}
                     >
                       Bookings
                     </a>
@@ -105,9 +108,10 @@ const Navbar = (props) => {
                   <li className="nav-item">
                     <a
                       className="nav-link"
-                      onClick={(e) =>
-                        props.currentTab(e.currentTarget.innerText)
-                      }
+                      onClick={(e) => {
+                        props.currentTab(e.currentTarget.innerText);
+                        toggleNavbar();
+                      }}
                     >
                       Services
                     </a>
@@ -115,9 +119,10 @@ const Navbar = (props) => {
                   <li className="nav-item">
                     <a
                       className="nav-link"
-                      onClick={(e) =>
-                        props.currentTab(e.currentTarget.innerText)
-                      }
+                      onClick={(e) => {
+                        props.currentTab(e.currentTarget.innerText);
+                        toggleNavbar();
+                      }}
                     >
                       Main Services
                     </a>

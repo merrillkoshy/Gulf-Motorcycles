@@ -40,10 +40,15 @@ $transition: 0.5s;
   .serviceslist,
   .main-services-list,
   .admin-bookinglist {
-    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
+    max-width: 100vw;
   }
+
   .footer-area {
     display: table-row;
   }
@@ -274,9 +279,26 @@ $transition: 0.5s;
   }
 }
 .serviceslist {
+  .mast {
+    padding: 2em 0.2rem;
+  }
   .hideInMobile {
     div {
       display: none !important;
+    }
+  }
+  .pagination {
+    .page-item {
+      &.active {
+        .page-link {
+          color: $white_color;
+          background-color: $template_color2;
+          border-color: $template_color2;
+        }
+      }
+      .page-link {
+        color: $template_color2;
+      }
     }
   }
 }

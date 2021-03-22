@@ -30,7 +30,7 @@ const MainServices = () => {
 
   return (
     <div className="main-services-list">
-      <h1>Services</h1>
+      <h1>Main Services</h1>
       <Table className="table ">
         <Thead>
           <Tr>
@@ -70,12 +70,24 @@ const MainServices = () => {
                               <Accordion.Collapse eventKey={`${i}`}>
                                 <Card.Body>
                                   <ul>
-                                    <li>Item Code : {service?.itemCode}</li>
-                                    <li>Item Name : {service?.itemName}</li>
-                                    <li>MRP : AED {service?.mrp}</li>
-                                    <li>Discount : AED {service?.discount}</li>
+                                    <li>
+                                      <strong>Item Code : </strong>
+                                      {service?.itemCode}
+                                    </li>
+                                    <li>
+                                      <strong>Item Name : </strong>
+                                      {service?.itemName}
+                                    </li>
+                                    <li>
+                                      <strong>MRP :</strong> AED {service?.mrp}
+                                    </li>
+                                    <li>
+                                      <strong>Discount :</strong> AED{" "}
+                                      {service?.discount}
+                                    </li>
                                     <li className="pricing">
-                                      Sales Price : AED {service?.salesPrice}
+                                      <strong>Sales Price :</strong> AED{" "}
+                                      {service?.salesPrice}
                                     </li>
                                   </ul>
                                 </Card.Body>

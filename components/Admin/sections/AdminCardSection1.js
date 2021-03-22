@@ -14,8 +14,10 @@ const AdminCardSection1 = (props) => {
   return (
     <>
       <div className="row">
-        <div className="col-3">Max Value For Analysis</div>
-        <div className="col-3">
+        <div className="col col-lg-3 col-xl-3 col-xxl-3">
+          Max Value For Analysis
+        </div>
+        <div className="col col-lg-3 col-xl-3 col-xxl-3">
           <div className="form-group">
             <input
               type="number"

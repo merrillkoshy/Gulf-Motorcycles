@@ -37,7 +37,7 @@ export default function Page() {
         <section className="admin-login ptb-100">
           <div className="container">
             <div className="row h-100 justify-content-center align-items-center">
-              <div className="col-5">
+              <div className="col col-lg-5 col-xl-5 col-xxl-5">
                 <div className="login-form">
                   <div className="logo-container row justify-content-center align-items-center">
                     <img src={logo} />
