@@ -71,7 +71,10 @@ const Footer = () => {
               <h3>Contact</h3>
               <ul>+971 55 555 5555</ul>
               <ul>info@gulfmotorcycles.com</ul>
-              <ul>Harebs Building Warehouse 10 Al Quoz Industrial 1 - Dubai</ul>
+              <ul>
+                Behind Burjeel Hospital, Sheikh Zayed Road, Al Quoz Industrial
+                1, Dubai
+              </ul>
             </div>
           </div>
         </div>

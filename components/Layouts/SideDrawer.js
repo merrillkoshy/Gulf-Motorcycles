@@ -79,8 +79,8 @@ class SideDrawer extends React.Component {
                       <i className="icofont-google-map"></i>
                       Address
                       <span>
-                        Harebs Building Warehouse 10 Al Quoz Industrial 1 -
-                        Dubai
+                        Behind Burjeel Hospital, Sheikh Zayed Road, Al Quoz
+                        Industrial 1, Dubai
                       </span>
                     </li>
                     <li>

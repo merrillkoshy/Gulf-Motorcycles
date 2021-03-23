@@ -31,7 +31,8 @@ class Content extends Component {
                 <Link href="https://goo.gl/maps/E8hFnyMBe4XR22HWA">
                   <a>
                     <p>
-                      Harebs Building Warehouse 10 Al Quoz Industrial 1 - Dubai
+                      Behind Burjeel Hospital, Sheikh Zayed Road, Al Quoz
+                      Industrial 1, Dubai
                     </p>{" "}
                   </a>
                 </Link>
