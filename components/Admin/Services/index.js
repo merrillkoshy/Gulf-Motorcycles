@@ -64,7 +64,7 @@ const Services = (props) => {
               onClick={() => {
                 if (activePage >= 2) {
                   setActivePage(activePage - 1);
-                  console.log(activePage + "minus");
+
                   setDisplayedServices(
                     services.slice(
                       limit * (activePage - 2),
@@ -82,7 +82,7 @@ const Services = (props) => {
                     active={activePage === index}
                     onClick={() => {
                       setActivePage(index);
-                      console.log(activePage + "regular");
+
                       setDisplayedServices(
                         services.slice(limit * i, limit * index)
                       );
@@ -101,10 +101,6 @@ const Services = (props) => {
                   setDisplayedServices(
                     services.slice(limit * activePage, limit * (activePage + 1))
                   );
-                  console.log(
-                    activePage + "plus   " + limit * (activePage + 1),
-                    limit * (activePage + 2)
-                  );
                 }
               }}
             />
@@ -116,7 +112,6 @@ const Services = (props) => {
               onClick={() => {
                 if (activePage >= 2) {
                   setActivePage(activePage - 1);
-                  console.log(activePage + "minus");
                   setDisplayedServices(
                     services.slice(
                       limit * (activePage - 2),
@@ -154,7 +149,7 @@ const Services = (props) => {
                 alignSelf: "center",
               }}
             >
-              {" / " + limit}
+              {" / " + (limit + 1)}
             </div>
 
             <Pagination.Next
@@ -163,10 +158,6 @@ const Services = (props) => {
                   setActivePage(activePage + 1);
                   setDisplayedServices(
                     services.slice(limit * activePage, limit * (activePage + 1))
-                  );
-                  console.log(
-                    activePage + "plus   " + limit * (activePage + 1),
-                    limit * (activePage + 2)
                   );
                 }
               }}
@@ -229,43 +220,41 @@ const Services = (props) => {
             {displayedServices
               ? displayedServices.map((service, i) => {
                   return (
-                    <>
-                      <Tr key={"serve" + service?.itemCode}>
-                        <Td scope="row">{service?.itemCode}</Td>
+                    <Tr key={"serve" + service?.itemCode}>
+                      <Td scope="row">{service?.itemCode}</Td>
 
-                        <Td>
-                          <ServiceNameEditor
-                            dbref={servicesRef}
-                            itemCode={service?.itemCode}
-                            serviceName={service?.itemName}
-                          />
-                        </Td>
-
-                        <PricingAdjustor
+                      <Td>
+                        <ServiceNameEditor
                           dbref={servicesRef}
                           itemCode={service?.itemCode}
-                          mrp={service?.mrp}
-                          discount={service?.discount}
+                          serviceName={service?.itemName}
                         />
+                      </Td>
 
-                        <Td
-                          style={{ height: 0, padding: 0 }}
-                          className="d-block d-lg-none d-xl-none d-xxl-none hideInMobile"
-                        ></Td>
-                        <Td
-                          style={{ height: 0, padding: 0 }}
-                          className="d-block d-lg-none d-xl-none d-xxl-none hideInMobile"
-                        ></Td>
+                      <PricingAdjustor
+                        dbref={servicesRef}
+                        itemCode={service?.itemCode}
+                        mrp={service?.mrp}
+                        discount={service?.discount}
+                      />
 
-                        <Td>
-                          <PublishedStateSwitcher
-                            dbref={servicesRef}
-                            itemCode={service?.itemCode}
-                            published={service?.published}
-                          />
-                        </Td>
-                      </Tr>
-                    </>
+                      <Td
+                        style={{ height: 0, padding: 0 }}
+                        className="d-block d-lg-none d-xl-none d-xxl-none hideInMobile"
+                      ></Td>
+                      <Td
+                        style={{ height: 0, padding: 0 }}
+                        className="d-block d-lg-none d-xl-none d-xxl-none hideInMobile"
+                      ></Td>
+
+                      <Td>
+                        <PublishedStateSwitcher
+                          dbref={servicesRef}
+                          itemCode={service?.itemCode}
+                          published={service?.published}
+                        />
+                      </Td>
+                    </Tr>
                   );
                 })
               : null}

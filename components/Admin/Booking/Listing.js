@@ -3,10 +3,11 @@ import ModalBooking from "./Modal";
 const Listing = (props) => {
   const [show, setShow] = useState(false);
   const [bookRef, setBookRef] = useState(null);
+
   return Object.values(props?.bookings).map((book, i) => {
     return (
-      <>
-        <div className="booking-wrapper" key={i + book.refId}>
+      <div key={i + book.refId}>
+        <div className="booking-wrapper">
           <span
             className={`badge badge-${
               book?.bookingStatus == "open"
@@ -16,9 +17,9 @@ const Listing = (props) => {
                 : "secondary"
             }`}
           >
-            {book?.bookingStatus.charAt(0).toUpperCase() +
-              book?.bookingStatus.substring(1)}
+            {book?.bookingStatus}
           </span>
+
           <a
             onClick={(e) => {
               setBookRef(props?.bookings[e.currentTarget.innerHTML]);
@@ -35,9 +36,10 @@ const Listing = (props) => {
           uid={props.uid}
           usersRef={props.usersRef}
           onHide={() => setShow(false)}
+          usersList={props?.usersList}
           bookingDetails={bookRef}
         />
-      </>
+      </div>
     );
   });
 };

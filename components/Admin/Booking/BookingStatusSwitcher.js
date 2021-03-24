@@ -5,7 +5,7 @@ import Ongoing from "./statusSwitchers/Ongoing";
 import Completed from "./statusSwitchers/Completed";
 
 const BookingStatusSwitcher = (props) => {
-  const [status, setStatus] = useState(false);
+  const [switchStatus, setSwitchStatus] = useState(false);
   const [bookingStatus, setBookingStatus] = useState(props?.bookingStatus);
   const [display, setDisplay] = useState("none");
   const [date, setDate] = useState(null);
@@ -14,23 +14,34 @@ const BookingStatusSwitcher = (props) => {
     return () => {
       setBookingStatus(props?.bookingStatus);
       setDisplay("none");
-      setStatus(false);
+      setSwitchStatus(false);
     };
   }, [bookingStatus]);
 
   const handleSave = () => {
-    if (status) {
-      props?.dbref.child(`/${props?.uid}/bookings/${props?.refId}`).update({
-        bookingStatus: "ongoing",
-        startDate: date,
-        completionDate: completionDate,
-      });
-      setBookingStatus("ongoing");
+    if (switchStatus) {
+      props?.dbref
+        .child(`/${props?.uid}/bookings/${props?.refId}`)
+        .update({
+          bookingStatus: "ongoing",
+          startDate: date,
+          completionDate: completionDate,
+        })
+        .then(() => {
+          props?.onHide();
+          props?.usersList();
+          props?.setStatus("ongoing");
+          setBookingStatus("ongoing");
+        });
     } else {
       props?.dbref
         .child(`/${props?.uid}/bookings/${props?.refId}`)
-        .update({ bookingStatus: "open" });
-      setBookingStatus("open");
+        .update({ bookingStatus: "open" })
+        .then(() => {
+          props?.usersList();
+          props?.setStatus("open");
+          setBookingStatus("open");
+        });
     }
   };
 
@@ -44,14 +55,14 @@ const BookingStatusSwitcher = (props) => {
               <label>
                 <Switch
                   onChange={() => {
-                    setStatus(!status);
+                    setSwitchStatus(!switchStatus);
                     if (display != "block") {
                       setDisplay("block");
                     } else {
                       setDisplay("none");
                     }
                   }}
-                  checked={status}
+                  checked={switchStatus}
                 />
               </label>
             </div>
@@ -95,6 +106,11 @@ const BookingStatusSwitcher = (props) => {
             startDate={props?.startDate}
             completionDate={props?.completionDate}
             setBookingStatus={setBookingStatus}
+            onHide={props?.onHide}
+            uid={props?.uid}
+            refId={props?.refId}
+            dbref={props?.dbref}
+            usersList={props?.usersList}
           />
         );
         break;

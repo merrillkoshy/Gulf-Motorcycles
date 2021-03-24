@@ -84,6 +84,7 @@ const Admin = () => {
     usersList();
 
     return () => {
+      setUsers(null);
       setTotalBookings(0);
       setOpenBookings(0);
       setOngoingBookings(0);
@@ -111,7 +112,13 @@ const Admin = () => {
 
         break;
       case "Bookings":
-        return <BookingList usersRef={usersRef} users={users} />;
+        return (
+          <BookingList
+            usersRef={usersRef}
+            users={users}
+            usersList={usersList}
+          />
+        );
       case "Services":
         return <Services />;
         break;

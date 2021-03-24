@@ -259,6 +259,7 @@ $transition: 0.5s;
     }
     .badge {
       margin-right: 10px;
+      text-transform: capitalize;
     }
     .open::marker {
       color: green;

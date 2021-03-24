@@ -12,8 +12,8 @@ const BookingList = (props) => {
   const [users, setUsers] = useState(null);
 
   useEffect(() => {
-    setUsers(props.users);
-  }, []);
+    setUsers(props?.users);
+  }, [props?.users]);
 
   return (
     <div className="admin-bookinglist">
@@ -45,6 +45,7 @@ const BookingList = (props) => {
                         userName={user?.username}
                         uid={user?.uid}
                         usersRef={usersRef}
+                        usersList={props?.usersList}
                         bookings={user?.bookings}
                       />
                     </Td>

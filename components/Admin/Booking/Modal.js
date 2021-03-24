@@ -6,7 +6,11 @@ import BookingStatusSwitcher from "./BookingStatusSwitcher";
 
 const ModalBooking = (props) => {
   const book = props?.bookingDetails;
+  const [status, setStatus] = useState(null);
 
+  useEffect(() => {
+    setStatus(props?.bookingDetails?.bookingStatus);
+  }, []);
   return (
     <Modal size="lg" show={props?.show} onHide={props?.onHide}>
       <Modal.Header closeButton>
@@ -20,8 +24,7 @@ const ModalBooking = (props) => {
                 : "secondary"
             } `}
           >
-            {book?.bookingStatus.charAt(0).toUpperCase() +
-              book?.bookingStatus.substring(1)}
+            {status ? status : props?.bookingDetails?.bookingStatus}
           </span>
           Ref Id: {book?.refId} | {book?.serviceName}
         </Modal.Title>
@@ -48,7 +51,9 @@ const ModalBooking = (props) => {
                 <Td scope="col">{book?.vehicleName}</Td>
                 <Td scope="col">{book?.pickAndDrop ? "Yes" : "No"}</Td>
                 <Td scope="col">{book?.serviceCharge}</Td>
-                <Td scope="col">{book?.bookingStatus}</Td>
+                <Td scope="col">
+                  {status ? status : props?.bookingDetails?.bookingStatus}
+                </Td>
               </Tr>
             </Tbody>
           </Table>
@@ -60,6 +65,9 @@ const ModalBooking = (props) => {
             startDate={book?.startDate}
             completionDate={book?.completionDate}
             completedDate={book?.completedDate}
+            usersList={props?.usersList}
+            setStatus={setStatus}
+            onHide={props?.onHide}
           />
         </div>
       </Modal.Body>

@@ -8,11 +8,17 @@ const Ongoing = (props) => {
 
   const handleSave = () => {
     if (status) {
-      props?.dbref.child(`/${props?.uid}/bookings/${props?.refId}`).update({
-        bookingStatus: "completed",
-        completedDate: moment().format("YYYY-MM-DD"),
-      });
-      props.setBookingStatus("completed");
+      props?.dbref
+        .child(`/${props?.uid}/bookings/${props?.refId}`)
+        .update({
+          bookingStatus: "closed",
+          completedDate: moment().format("YYYY-MM-DD"),
+        })
+        .then(() => {
+          props?.onHide();
+          props?.usersList();
+          props.setBookingStatus("closed");
+        });
     }
   };
 

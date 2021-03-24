@@ -15,24 +15,6 @@ const Completed = (props) => {
       : days == 0
       ? `On Promised Time`
       : `Failed to retrieve dates`;
-    // console.log(days > 0);
-    // switch (days) {
-    //   case days > 0:
-    //     return `${days} days ahead`;
-
-    //     break;
-    //   case days < 0:
-    //     return `${days} overdue`;
-
-    //     break;
-    //   case days == 0:
-    //     return `On Promised Time`;
-
-    //     break;
-    //   default:
-    //     return `Failed to retrieve dates`;
-    //     break;
-    // }
   };
   useEffect(() => {
     setResponse(efficiencyResponse());
@@ -42,37 +24,35 @@ const Completed = (props) => {
     };
   }, []);
   return (
-    <>
-      <div className="row">
-        {/* <div className="col">{props?.bookingStatus}</div> */}
-        <div className="container">
-          <div className="col">
-            <div className="row">
-              <strong>Start Date : </strong>
-            </div>
-            <div className="row" style={{ color: "grey" }}>
-              <div className="col">{props?.startDate}</div>
-            </div>
-            <div className="row">
-              <strong>Estimated Completion Date: </strong>
-            </div>
-            <div className="row" style={{ color: "red" }}>
-              <div className="col">{props?.completionDate}</div>
-            </div>
+    <div className="row">
+      {/* <div className="col">{props?.bookingStatus}</div> */}
+      <div className="container">
+        <div className="col">
+          <div className="row">
+            <strong>Start Date : </strong>
+          </div>
+          <div className="row" style={{ color: "grey" }}>
+            <div className="col">{props?.startDate}</div>
+          </div>
+          <div className="row">
+            <strong>Estimated Completion Date: </strong>
+          </div>
+          <div className="row" style={{ color: "red" }}>
+            <div className="col">{props?.completionDate}</div>
+          </div>
 
-            <div className="row">
-              <strong>Completed Date : </strong>
-            </div>
-            <div className="row" style={{ color: "green" }}>
-              <div className="col">{props?.completedDate}</div>
-              <div className="col" style={{ color: "black" }}>
-                <strong>{response}</strong>
-              </div>
+          <div className="row">
+            <strong>Completed Date : </strong>
+          </div>
+          <div className="row" style={{ color: "green" }}>
+            <div className="col">{props?.completedDate}</div>
+            <div className="col" style={{ color: "black" }}>
+              <strong>{response}</strong>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 export default Completed;
