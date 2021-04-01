@@ -3,45 +3,40 @@ import React, { Component } from "react";
 class Discover extends Component {
   render() {
     return (
-      <section className="book-discover ptb-100">
+      <section className="book-discover pb-100">
         <div className="container">
           <div className="row h-100 justify-content-center align-items-center">
             <div className="col-lg-6 col-md-12">
               <div className="discover-content">
                 <h3>Services Overview</h3>
-                <span>Sub</span>
-                <p>An intro</p>
+                <p>
+                  Gulf Motorcycles offers a full range of maintenance services
+                  to all brands two wheeler delivery motorcyclists put up in the
+                  UAE.
+                </p>
+                <p>
+                  Our professionals are trained to manage a wide range of two
+                  wheeler’s related services.
+                </p>
 
                 <ul>
                   <li>
-                    <i className="icofont-check"></i> Point 1
+                    <i className="icofont-check"></i> Engine Work
                   </li>
                   <li>
-                    <i className="icofont-check"></i> Point 2
+                    <i className="icofont-check"></i> Branding & Painting
                   </li>
                   <li>
-                    <i className="icofont-check"></i> Point 3
+                    <i className="icofont-check"></i> Body & Lights
                   </li>
                   <li>
-                    <i className="icofont-check"></i> Point 4
+                    <i className="icofont-check"></i> Tyres
                   </li>
                   <li>
-                    <i className="icofont-check"></i> Point 5
+                    <i className="icofont-check"></i> Air Filters
                   </li>
                   <li>
-                    <i className="icofont-check"></i> Point 6
-                  </li>
-                  <li>
-                    <i className="icofont-check"></i> Point 7
-                  </li>
-                  <li>
-                    <i className="icofont-check"></i> Point 8
-                  </li>
-                  <li>
-                    <i className="icofont-check"></i> Point 9
-                  </li>
-                  <li>
-                    <i className="icofont-check"></i> Point 10
+                    <i className="icofont-check"></i> Pick & Drop
                   </li>
                 </ul>
               </div>

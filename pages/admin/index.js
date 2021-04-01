@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
 
 import LoginBody from "../../components/Admin/LoginBody";
 

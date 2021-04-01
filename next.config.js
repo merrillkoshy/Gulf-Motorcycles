@@ -1,7 +1,11 @@
-const path = require('path')
+const path = require("path");
+const withOffline = require("next-offline");
 
-module.exports = {
-    sassOptions: {
-        includePaths: [path.join(__dirname, 'styles')],
-    },
-}
+const nextConfig = {
+  sassOptions: {
+    includePaths: [path.join(__dirname, "styles")],
+  },
+  target: "serverless",
+};
+
+module.exports = withOffline(nextConfig);

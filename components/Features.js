@@ -34,18 +34,21 @@ const Features = () => {
                 <div key={`serve${i}`} className="col-lg-4 col-md-6">
                   <div className="single-features-box">
                     <div className="icon">
-                      <i className="icofont-motor-bike"></i>
+                      <img src={service?.icon} />
                     </div>
                     <h3 style={{ textTransform: "capitalize" }}>
                       {service?.serviceName}
                     </h3>
-                    <ul>
+                    <div className="discover-content">
+                      <span>{service?.description}</span>
+                    </div>
+                    {/* <ul>
                       {service?.services.map((service, i) => {
                         return (
                           <li key={service?.itemName}>{service?.itemName}</li>
                         );
                       })}
-                    </ul>
+                    </ul> */}
                     <a>
                       <strong>Service cost</strong> : AED {service?.salesPrice}
                     </a>

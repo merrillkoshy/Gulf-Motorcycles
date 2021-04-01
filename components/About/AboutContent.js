@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { Component } from "react";
 
 const AboutContent = () => {
@@ -9,29 +10,46 @@ const AboutContent = () => {
             <div className="row">
               <div className="col-lg-6 col-md-6">
                 <div className="single-holder-box">
-                  <img src="/images/payment-img1.png" alt="image" />
+                  <img src="/images/Contact_Page_Icons-03.png" alt="image" />
                   <h3>Our Company</h3>
-                  <p>Duis hendrerit eget dolor non lora pulvinar. In conse.</p>
+                  <p>
+                    Gulf Motorcycles offers a full range of maintenance services
+                    to all brands two wheeler delivery motorcyclists put up in
+                    the UAE.
+                  </p>
                 </div>
 
                 <div className="single-holder-box mt-30">
-                  <img src="/images/payment-img2.png" alt="image" />
-                  <h3>What we Value</h3>
-                  <p>Duis hendrerit eget dolor non lora pulvinar. In conse.</p>
+                  <img src="/images/Contact_Page_Icons-01.png" alt="image" />
+                  <h3>Pick and Drop</h3>
+                  <p>
+                    Bringing you the most convenient means to fix your ride, we
+                    are offering pick and drop services of your vehicle, in
+                    Dubai
+                  </p>
                 </div>
               </div>
 
               <div className="col-lg-6 col-md-6">
                 <div className="single-holder-box mt-50">
-                  <img src="/images/payment-img3.png" alt="image" />
+                  <img src="/images/Contact_Page_Icons-02.png" alt="image" />
                   <h3>Who we are</h3>
-                  <p>Duis hendrerit eget dolor non lora pulvinar. In conse.</p>
+                  <p>
+                    Our professionals are trained to manage a wide range of two
+                    wheeler’s related services.
+                  </p>
                 </div>
 
                 <div className="single-holder-box mt-30">
-                  <img src="/images/payment-img4.png" alt="image" />
+                  <img src="/images/Contact_Page_Icons-04.png" alt="image" />
                   <h3>Contact Us</h3>
-                  <p>Duis hendrerit eget dolor non lora pulvinar. In conse.</p>
+                  <p>
+                    We are behind
+                    <a href="https://goo.gl/maps/E8hFnyMBe4XR22HWA">
+                      Burjeel Hospital, Sheikh Zayed Road, Al Quoz Industrial 1,
+                      Dubai
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -40,25 +58,33 @@ const AboutContent = () => {
           <div className="col-lg-5 col-md-12">
             <div className="features-holder-content">
               <div className="section-title">
-                <h2>We are Awesome</h2>
+                <h2>Its taken care of!</h2>
                 <div className="bar"></div>
                 <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form.
+                  Found by engineers in track racing, Gulf Motorcycles -
+                  Motorcycle Repairs was formed to offer the most affordable
+                  services to motorcycles of all brands, specialising in
+                  delivery bikes.
                 </p>
               </div>
 
               <p>
-                We’re also experts at finding the sweet spot between Google’s
-                guidelines and what is commercially right for you. We have
-                progressive theories on search as a tool for retention of
-                customers, not just for acquisition. we always measure, always
-                analyze and always innovate.
+                Bringing you the best talent with the tools, we are taking our
+                services to the next level with picking your vehicle from your
+                residence/office and administering the best service methods and
+                finally dropping your vehicle back to where we picked it up,
+                good as new!
               </p>
-              <a href="#" className="btn btn-primary">
-                Our Services
-              </a>
+
+              <p>
+                As affordability and best prices are our stand-outs, leaving
+                your vehicle with us will leave you with your peace of mind and
+                most importantly, the peace of ride as we guarantee your vehicle
+                will be safer than how it came to us!
+              </p>
+              <Link href="/services">
+                <a className="btn btn-primary">Our Services</a>
+              </Link>
             </div>
           </div>
         </div>

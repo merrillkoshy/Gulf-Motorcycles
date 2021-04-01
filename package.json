@@ -4,26 +4,33 @@
   "description": "Best Motorcycle Repairs Pitstop in UAE",
   "main": "index.js",
   "scripts": {
-    "dev": "node server.js -p $PORT",
+    "dev": "next",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js -p $PORT"
+    "start": "next start -p 3000",
+    "postbuild": "next-sitemap",
+    "export": "next export"
   },
   "keywords": [
-    "next.js",
-    "react.js",
-    "node.js"
+    "motorbike",
+    "Motorcycle repair",
+    "motorcycle workshop",
+    "motorcycle"
   ],
   "dependencies": {
     "@babel/runtime-corejs2": "^7.12.5",
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "firebase": "^8.3.0",
+    "localforage": "^1.9.0",
     "mdbreact": "^5.0.1",
     "moment": "^2.29.1",
     "next": "^10.0.3",
+    "next-offline": "^5.0.3",
     "next-redux-wrapper": "^3.0.0-alpha.3",
     "next-routes": "^1.4.2",
+    "next-sitemap": "^1.6.18",
     "react": "^16.14.0",
     "react-accessible-accordion": "^3.3.3",
     "react-bootstrap": "^1.5.2",

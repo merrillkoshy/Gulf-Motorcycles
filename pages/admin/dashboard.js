@@ -12,6 +12,7 @@ import Link from "next/link";
 import MainServices from "../../components/Admin/MainServices";
 // import "react-super-responsive-table/dist/SuperResponsiveTableStyle.css";
 import { useRouter } from "next/router";
+import registerWorker from "../../lib/registerWorker";
 
 const Admin = () => {
   var userAuth =
@@ -81,6 +82,7 @@ const Admin = () => {
   };
 
   useEffect(() => {
+    if (userAuth) registerWorker();
     usersList();
 
     return () => {
