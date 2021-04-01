@@ -21,7 +21,6 @@ const AdminDetailsPage = (props) => {
           .once("value", (snapshot) => {
             snapshot.forEach((snap) => {
               const userObject = snap.val();
-
               if (userObject.token == value) setStatus(true);
             });
           });
@@ -33,7 +32,7 @@ const AdminDetailsPage = (props) => {
     return () => {
       setStatus(false);
     };
-  }, []);
+  }, [status]);
 
   const registerDevice = () => {
     if (ident) {
@@ -43,6 +42,21 @@ const AdminDetailsPage = (props) => {
         .update({
           identification: ident,
           token: token,
+        })
+        .then(() => {
+          toast("Succesfully registered", {
+            position: "bottom-center",
+            type: "success",
+          });
+          firebase
+            .database()
+            .ref("/admin/" + "notificationRegistry/")
+            .once("value", (snapshot) => {
+              snapshot.forEach((snap) => {
+                const userObject = snap.val();
+                if (userObject.token == value) setStatus(true);
+              });
+            });
         });
     } else {
       toast("Please add an identification text!", {

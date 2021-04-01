@@ -15,12 +15,11 @@ const cors = initMiddleware(
 
 export default async function handler(req, res) {
   const data = req.body;
+  const auth = req.headers.authorization;
 
   await cors(req, res);
   var authList = [];
   const fcmUrl = "https://fcm.googleapis.com/fcm/send";
-  const fcmKey =
-    "AAAAIN_-NbA:APA91bHnZthUE2FDpPOrc_Jx-9KXJ1_LBcHexErKLUaJdw9N2gmfaX3YQFczrlP1h8yQZ4KGSbjA2fC8BJNtMBPMbmw9yhitWZnp40jKAQ1zaC8q2rHmxXC7bLRkR9-rXWjz6IdFjhR8";
 
   if (req.method === "POST") {
     // prettier-ignore
@@ -35,13 +34,11 @@ export default async function handler(req, res) {
     })
     .then(() => {
       data.registration_ids = authList;
+      
       const request = {
         url: fcmUrl,
         method: "post",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `key=${fcmKey}`,
-        },
+        headers: {'content-type': 'application/json',authorization:auth},
         data
       };
   
