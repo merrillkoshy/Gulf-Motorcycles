@@ -1,17 +1,17 @@
+import { useState, useEffect } from "react";
+import "firebase/auth";
+import { useRouter } from "next/router";
+import Link from "next/link";
+
 import Content from "../../components/Admin/Content";
 import SideNavigation from "../../components/Admin/sideNavigation";
 import Footer from "../../components/Admin/Footer";
 import Navbar from "../../components/Layouts/NavBarAdmin";
 import firebase from "../../lib/firebaseConfig";
-import "firebase/auth";
-import { useState, useEffect } from "react";
 import UserList from "../../components/Admin/UserList";
 import BookingList from "../../components/Admin/Booking";
 import Services from "../../components/Admin/Services";
-import Link from "next/link";
 import MainServices from "../../components/Admin/MainServices";
-// import "react-super-responsive-table/dist/SuperResponsiveTableStyle.css";
-import { useRouter } from "next/router";
 import registerWorker from "../../lib/registerWorker";
 
 const Admin = () => {
@@ -83,6 +83,7 @@ const Admin = () => {
 
   useEffect(() => {
     if (userAuth) registerWorker();
+
     usersList();
 
     return () => {
