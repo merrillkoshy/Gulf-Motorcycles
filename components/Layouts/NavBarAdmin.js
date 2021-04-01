@@ -129,7 +129,11 @@ const Navbar = (props) => {
                   </li>
                 </ul>
               </div>
-              <div className="col-2 adminTag">{props.userName}</div>
+              <div className="col-2 adminTag">
+                <a onClick={() => props.currentTab(props.userName)}>
+                  {props.userName}
+                </a>
+              </div>
               <div>
                 <div className="justify-content-right align-items-right">
                   <button onClick={logout} className="btn btn-primary">

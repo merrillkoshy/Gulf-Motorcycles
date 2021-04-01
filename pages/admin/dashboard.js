@@ -13,6 +13,7 @@ import BookingList from "../../components/Admin/Booking";
 import Services from "../../components/Admin/Services";
 import MainServices from "../../components/Admin/MainServices";
 import registerWorker from "../../lib/registerWorker";
+import AdminDetailsPage from "../../components/Admin/AdminDetailsPage";
 
 const Admin = () => {
   var userAuth =
@@ -127,6 +128,8 @@ const Admin = () => {
         break;
       case "Main Services":
         return <MainServices />;
+      case "Admin":
+        return <AdminDetailsPage />;
       default:
         return <Content />;
         break;
