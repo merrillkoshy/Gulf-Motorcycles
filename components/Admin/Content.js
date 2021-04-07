@@ -11,6 +11,7 @@ import ChartSection2 from "./sections/ChartSection2";
 import ModalSection from "./sections/ModalSection";
 import { Button } from "react-bootstrap";
 import axios from "axios";
+import RevenueChart from "./sections/RevenueChart";
 
 const DashboardPage = (props) => {
   return (
@@ -25,9 +26,13 @@ const DashboardPage = (props) => {
         closedBookings={props.closedBookings}
       />
       {/* <ChartSection1 />
-      <TableSection />
-      <ChartSection2 />
-      <MDBRow className="mb-4">
+      <TableSection /> */}
+      <ChartSection2
+        startDates={props?.startDates}
+        completedDates={props?.completedDates}
+      />
+      {props.totalRevenue && <RevenueChart totalRevenue={props.totalRevenue} />}
+      {/* <MDBRow className="mb-4">
         <MapSection />
         <ModalSection />
       </MDBRow> */}

@@ -1,18 +1,45 @@
 import { useEffect, useState } from "react";
+
 import { Table, Thead, Tbody, Tr, Th, Td } from "react-super-responsive-table";
+import FilterModal from "../FilterModal";
 // import "react-super-responsive-table/dist/SuperResponsiveTableStyle.css";
 
 import Listing from "./Listing";
 
 const BookingList = (props) => {
   const usersRef = props.usersRef;
-  const [image, setImage] = useState(null);
-  const [serviceName, setServiceName] = useState(null);
-
   const [users, setUsers] = useState(null);
+  const [show, setShow] = useState(false);
+  const [currentKey, setCurrentKey] = useState(false);
 
+  const filterUsers = (key) => {
+    setCurrentKey(key);
+
+    var usersWithBookings = props?.users?.filter((user) => {
+      for (const vals in user?.bookings) {
+        if (user?.bookings[vals]?.bookingStatus == key) {
+          user.bookings = Object.values(user?.bookings).filter((val) => {
+            if (val.bookingStatus == key) return val;
+          });
+          return user;
+        }
+      }
+    });
+
+    setUsers(usersWithBookings);
+  };
+
+  const reset = () => {
+    setUsers(props?.users);
+    setCurrentKey(null);
+    setShow(false);
+  };
   useEffect(() => {
     setUsers(props?.users);
+    return () => {
+      setCurrentKey(null);
+      setUsers(props?.users);
+    };
   }, [props?.users]);
 
   return (
@@ -26,7 +53,12 @@ const BookingList = (props) => {
             <Th scope="col">Address</Th>
             <Th scope="col">Email</Th>
             <Th scope="col">Phone Number</Th>
-            <Th scope="col">Bookings</Th>
+            <Th scope="col">
+              Bookings{" "}
+              <a onClick={() => setShow(true)} className="hollowButton">
+                Filter <i className="icofont-filter"></i>
+              </a>
+            </Th>
           </Tr>
         </Thead>
         <Tbody>
@@ -47,6 +79,14 @@ const BookingList = (props) => {
                         usersRef={usersRef}
                         usersList={props?.usersList}
                         bookings={user?.bookings}
+                      />
+                      <FilterModal
+                        show={show}
+                        params={["Open", "Ongoing", "Closed"]}
+                        onHide={() => setShow(false)}
+                        filterUsers={filterUsers}
+                        reset={reset}
+                        currentKey={currentKey}
                       />
                     </Td>
                   </Tr>

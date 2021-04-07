@@ -21,9 +21,12 @@ const Admin = () => {
   const [tab, currentTab] = useState("Dashboard");
   const [users, setUsers] = useState(null);
   const [totalBookings, setTotalBookings] = useState(0);
+  const [totalStartDates, setTotalStartDates] = useState(null);
+  const [totalCompletedDates, setTotalCompletedDates] = useState(null);
   const [openBookings, setOpenBookings] = useState(0);
   const [ongoingBookings, setOngoingBookings] = useState(0);
   const [closedBookings, setClosedBookings] = useState(0);
+  const [totalRevenue, setTotalRevenue] = useState(0);
   const router = useRouter();
 
   const logout = () => {
@@ -43,6 +46,11 @@ const Admin = () => {
     var openBookingsCount = 0;
     var ongoingBookingsCount = 0;
     var closedBookingsCount = 0;
+    var startDates = [];
+    var completedDates = [];
+    var revenueWrapper = [];
+    var revenue = {};
+
     usersRef
       .once("value", (snapshot) => {
         snapshot.forEach((snap) => {
@@ -59,6 +67,12 @@ const Admin = () => {
           ? userList.map((user, i) => {
               return user.bookings
                 ? Object.values(user.bookings).map((book, i) => {
+                    if (book.startDate) {
+                      startDates.push(book.startDate);
+                    }
+                    if (book.completedDate) {
+                      completedDates.push(book.completedDate);
+                    }
                     if (book.bookingStatus === "open") {
                       totalBookingsCount = totalBookingsCount + 1;
                       openBookingsCount = openBookingsCount + 1;
@@ -66,6 +80,10 @@ const Admin = () => {
                       totalBookingsCount = totalBookingsCount + 1;
                       ongoingBookingsCount = ongoingBookingsCount + 1;
                     } else if (book.bookingStatus === "closed") {
+                      revenueWrapper.push({
+                        completedDate: book?.completedDate,
+                        amount: parseInt(book?.serviceCharge),
+                      });
                       totalBookingsCount = totalBookingsCount + 1;
                       closedBookingsCount = closedBookingsCount + 1;
                     }
@@ -75,10 +93,13 @@ const Admin = () => {
           : null;
       })
       .then(() => {
+        setTotalStartDates(startDates);
+        setTotalCompletedDates(completedDates);
         setTotalBookings(totalBookingsCount);
         setOpenBookings(openBookingsCount);
         setOngoingBookings(ongoingBookingsCount);
         setClosedBookings(closedBookingsCount);
+        setTotalRevenue(revenueWrapper);
       });
   };
 
@@ -93,6 +114,9 @@ const Admin = () => {
       setOpenBookings(0);
       setOngoingBookings(0);
       setClosedBookings(0);
+      setTotalStartDates(null);
+      setTotalCompletedDates(null);
+      setTotalRevenue({});
       logout();
     };
   }, []);
@@ -103,10 +127,13 @@ const Admin = () => {
         return (
           <Content
             users={users}
+            startDates={totalStartDates}
+            completedDates={totalCompletedDates}
             totalBookings={totalBookings}
             openBookings={openBookings}
             ongoingBookings={ongoingBookings}
             closedBookings={closedBookings}
+            totalRevenue={totalRevenue}
           />
         );
 

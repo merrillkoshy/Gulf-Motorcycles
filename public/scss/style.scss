@@ -132,6 +132,23 @@ p {
     margin-bottom: 0;
   }
 }
+.hollowButton {
+  border: 1px solid;
+  padding: 6px;
+  margin: 0.3rem 0;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+.modal-form-container {
+  position: relative;
+  display: flex;
+  margin: 1em 2em;
+  align-items: flex-start;
+  flex-direction: column;
+  .modal-form-check {
+    margin: 10px;
+  }
+}
 button {
   outline: 0 !important;
 }
