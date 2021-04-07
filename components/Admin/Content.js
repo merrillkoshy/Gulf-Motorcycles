@@ -27,11 +27,15 @@ const DashboardPage = (props) => {
       />
       {/* <ChartSection1 />
       <TableSection /> */}
-      <ChartSection2
-        startDates={props?.startDates}
-        completedDates={props?.completedDates}
-      />
-      {props.totalRevenue && <RevenueChart totalRevenue={props.totalRevenue} />}
+      <div className="container mt-5">
+        <ChartSection2
+          startDates={props?.startDates}
+          completedDates={props?.completedDates}
+        />
+        {props.totalRevenue && (
+          <RevenueChart totalRevenue={props.totalRevenue} />
+        )}
+      </div>
       {/* <MDBRow className="mb-4">
         <MapSection />
         <ModalSection />

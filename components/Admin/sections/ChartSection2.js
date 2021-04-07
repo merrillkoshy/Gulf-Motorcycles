@@ -158,8 +158,8 @@ const ChartSection2 = (props) => {
   //   };
 
   return (
-    <MDBRow className="ptb-4">
-      <MDBCol md="12" lg="6" className="mb-4">
+    <>
+      <MDBCol md="12" lg="10" className="mx-auto">
         {years &&
           years.map((year, i) => {
             return (
@@ -194,7 +194,7 @@ const ChartSection2 = (props) => {
           </MDBCardBody>
         </MDBCard>
       </MDBCol> */}
-    </MDBRow>
+    </>
   );
 };
 

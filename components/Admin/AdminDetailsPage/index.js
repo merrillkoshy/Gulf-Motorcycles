@@ -21,7 +21,10 @@ const AdminDetailsPage = (props) => {
           .once("value", (snapshot) => {
             snapshot.forEach((snap) => {
               const userObject = snap.val();
-              if (userObject.token == value) setStatus(true);
+              if (userObject.token == value) {
+                console.log(userObject.token);
+                setStatus(true);
+              }
             });
           });
       })
@@ -32,7 +35,7 @@ const AdminDetailsPage = (props) => {
     return () => {
       setStatus(false);
     };
-  }, [status]);
+  }, []);
 
   const registerDevice = () => {
     if (ident) {
@@ -54,7 +57,9 @@ const AdminDetailsPage = (props) => {
             .once("value", (snapshot) => {
               snapshot.forEach((snap) => {
                 const userObject = snap.val();
-                if (userObject.token == value) setStatus(true);
+                if (userObject.token == value) {
+                  setStatus(true);
+                }
               });
             });
         });

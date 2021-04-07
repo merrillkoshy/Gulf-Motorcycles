@@ -26,13 +26,20 @@ const RevenueChart = (props) => {
   });
   const dataArrayClosed = new Array(12).fill(0);
   props?.totalRevenue?.map((pack) => {
-    return monthsData.map((month) => {
-      if (parseInt(moment(pack.completedDate).format("M")) === month) {
-        var bundler = 0;
-        bundler = bundler + pack.amount;
-        return (dataArrayClosed[month - 1] = bundler);
-      }
-    });
+    var bundler = 0;
+    var monthNumber = parseInt(moment(pack.completedDate).format("M"));
+    dataArrayClosed[monthNumber - 1] == 0
+      ? (dataArrayClosed[monthNumber - 1] = pack.amount)
+      : (dataArrayClosed[monthNumber - 1] =
+          dataArrayClosed[monthNumber - 1] + pack.amount);
+    return dataArrayClosed;
+
+    // return monthsData.map((month) => {
+    //   if (parseInt(moment(pack.completedDate).format("M")) === month) {
+    //     console.log(month + " : " + (bundler + pack.amount));
+    //     return (dataArrayClosed[month - 1] = bundler + pack.amount);
+    //   }
+    // });
   });
 
   const allMonths = [
@@ -53,7 +60,7 @@ const RevenueChart = (props) => {
     labels: allMonths,
     datasets: [
       {
-        label: "Amount (AED)",
+        label: "Revenue (AED)",
         fill: false,
         lineTension: 0.1,
         backgroundColor: "#228B2280",
@@ -77,8 +84,8 @@ const RevenueChart = (props) => {
   };
 
   return (
-    <MDBRow className="ptb-4">
-      <MDBCol md="12" lg="6" className="mb-4">
+    <>
+      <MDBCol md="12" lg="10" className="mx-auto mb-4">
         {years &&
           years.map((year, i) => {
             return (
@@ -93,7 +100,7 @@ const RevenueChart = (props) => {
             );
           })}
       </MDBCol>
-    </MDBRow>
+    </>
   );
 };
 
