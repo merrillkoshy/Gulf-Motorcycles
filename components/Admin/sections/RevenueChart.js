@@ -24,22 +24,16 @@ const RevenueChart = (props) => {
   const monthsData = props?.totalRevenue?.map((date) => {
     return parseInt(moment(date.completedDate).format("M"));
   });
-  const dataArrayClosed = new Array(12).fill(0);
+  const compactedMonths = [...new Set(monthsData)];
+  const arrayLimit = compactedMonths[0];
+  const dataArrayClosed = new Array(arrayLimit).fill(0);
   props?.totalRevenue?.map((pack) => {
-    var bundler = 0;
     var monthNumber = parseInt(moment(pack.completedDate).format("M"));
     dataArrayClosed[monthNumber - 1] == 0
       ? (dataArrayClosed[monthNumber - 1] = pack.amount)
       : (dataArrayClosed[monthNumber - 1] =
           dataArrayClosed[monthNumber - 1] + pack.amount);
     return dataArrayClosed;
-
-    // return monthsData.map((month) => {
-    //   if (parseInt(moment(pack.completedDate).format("M")) === month) {
-    //     console.log(month + " : " + (bundler + pack.amount));
-    //     return (dataArrayClosed[month - 1] = bundler + pack.amount);
-    //   }
-    // });
   });
 
   const allMonths = [
@@ -57,7 +51,7 @@ const RevenueChart = (props) => {
     "Dec",
   ];
   const dataLine = {
-    labels: allMonths,
+    labels: allMonths.slice(0, arrayLimit),
     datasets: [
       {
         label: "Revenue (AED)",
@@ -89,9 +83,18 @@ const RevenueChart = (props) => {
         {years &&
           years.map((year, i) => {
             return (
-              <MDBCard key={i + "yearkey" + year} className="mb-4">
+              <MDBCard
+                style={{
+                  borderRadius: 20,
+                  boxShadow: "-1px 3px 8px #0000003d",
+                }}
+                key={i + "yearkey" + year}
+                className="mb-4"
+              >
                 <MDBCardHeader>
-                  Year {year}-{year + 1}
+                  <strong>
+                    Year {year}-{year + 1}
+                  </strong>
                 </MDBCardHeader>
                 <MDBCardBody>
                   <Line data={dataLine} options={{ responsive: true }} />

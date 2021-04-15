@@ -7,10 +7,25 @@ import BookingStatusSwitcher from "./BookingStatusSwitcher";
 const ModalBooking = (props) => {
   const book = props?.bookingDetails;
   const [status, setStatus] = useState(null);
+  const [selectedSlot, setSelectedSlot] = useState(null);
 
   useEffect(() => {
     setStatus(props?.bookingDetails?.bookingStatus);
   }, []);
+  const selectThisTimeSlot = (slot) => {
+    setSelectedSlot(slot);
+  };
+  const timeSlotArrays = [
+    "9-10 AM",
+    "10-11 AM",
+    "11-12 AM",
+    "12-1 PM",
+    "2-3 PM",
+    "3-4 PM",
+    "4-5 PM",
+    "5-6 PM",
+  ];
+  const API_KEY = "AIzaSyCRS2BbreEHgILY64uHmkmfV8jK-oldGA4";
   return (
     <Modal size="lg" show={props?.show} onHide={props?.onHide}>
       <Modal.Header closeButton>
@@ -57,6 +72,63 @@ const ModalBooking = (props) => {
               </Tr>
             </Tbody>
           </Table>
+          <div className="container mb-5">
+            {book?.pickAndDrop && (
+              <div className="row">
+                <div className="col-2">Pickup Slot</div>
+                <div className="col">
+                  <div className="row">
+                    {timeSlotArrays.map((slot, i) => {
+                      return (
+                        <div
+                          key={slot + i}
+                          className={`${
+                            book?.timeSlot == slot ? "picked" : null
+                          } ${
+                            selectedSlot == slot ? "overridden" : null
+                          } timeslot col`}
+                          onClick={() => {
+                            if (book?.timeSlot != slot)
+                              selectThisTimeSlot(slot);
+                          }}
+                        >
+                          {slot}
+                        </div>
+                      );
+                    })}
+                  </div>
+                  {selectedSlot && (
+                    <div className="row mt-5">
+                      You have overridden user-selected time slot.
+                      <a
+                        style={{
+                          textDecoration: "underline",
+                          color: "#FF2800",
+                          cursor: "pointer",
+                          marginLeft: 5,
+                        }}
+                        onClick={() => setSelectedSlot(null)}
+                      >
+                        Undo
+                      </a>
+                    </div>
+                  )}
+                  <div className="row mt-5">
+                    <iframe
+                      width="500"
+                      height="170"
+                      frameBorder="0"
+                      scrolling="no"
+                      marginHeight="0"
+                      marginWidth="0"
+                      src={`https://www.google.com/maps/embed/v1/place?key=${API_KEY}&q=${book?.coordsDetected?.latitude},${book?.coordsDetected?.longitude}&zoom=18" allowfullscreen`}
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+
           <BookingStatusSwitcher
             dbref={props?.usersRef}
             uid={props?.uid}
@@ -67,6 +139,8 @@ const ModalBooking = (props) => {
             completedDate={book?.completedDate}
             usersList={props?.usersList}
             setStatus={setStatus}
+            bookedSlot={book?.timeSlot}
+            selectedSlot={selectedSlot}
             onHide={props?.onHide}
           />
         </div>

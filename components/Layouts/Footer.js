@@ -9,10 +9,10 @@ const Footer = () => {
             <div className="single-footer-widget">
               <Link href="#">
                 <a className="logo">
-                  <img src="/images/logo-light.png" alt="logo-light" />
+                  <img src="/images/logo-dark.png" alt="logo-light" />
                 </a>
               </Link>
-              <p>Something really nice</p>
+              <p>Service • Leasing • Parts</p>
 
               <ul className="social-list">
                 <li>
@@ -69,11 +69,11 @@ const Footer = () => {
           <div className="col-lg-3 col-md-6">
             <div className="single-footer-widget">
               <h3>Contact</h3>
-              <ul>+971 55 555 5555</ul>
+              <ul>+971 56 455 8337</ul>
               <ul>info@gulfmotorcycles.com</ul>
               <ul>
-                Behind Burjeel Hospital, Sheikh Zayed Road, Al Quoz Industrial
-                1, Dubai
+                Gulf Motorcycles-Motorcycle Repairs, Behind Burjeel Hospital,
+                Sheikh Zayed Road, 6A Street, Al Quoz Industrial 1, Dubai, UAE
               </ul>
             </div>
           </div>

@@ -31,8 +31,9 @@ class Content extends Component {
                 <Link href="https://goo.gl/maps/E8hFnyMBe4XR22HWA">
                   <a>
                     <p>
-                      Behind Burjeel Hospital, Sheikh Zayed Road, Al Quoz
-                      Industrial 1, Dubai
+                      Gulf Motorcycles-Motorcycle Repairs, Behind Burjeel
+                      Hospital, Sheikh Zayed Road, 6A Street, Al Quoz Industrial
+                      1, Dubai, UAE
                     </p>{" "}
                   </a>
                 </Link>
@@ -47,7 +48,7 @@ class Content extends Component {
                 <h3>Call Here</h3>
                 <p>
                   <Link href="#">
-                    <a>+971 55 555 5555</a>
+                    <a>+971 56 455 8337</a>
                   </Link>
                 </p>
               </div>

@@ -37,7 +37,7 @@ class SideDrawer extends React.Component {
                 <h2 className="modal-title" id="myModalLabel2">
                   <Link href="/">
                     <a>
-                      <img src="/images/logo.png" alt="logo" />
+                      <img src="/images/logo-light.png" alt="logo" />
                     </a>
                   </Link>
                 </h2>
@@ -79,8 +79,9 @@ class SideDrawer extends React.Component {
                       <i className="icofont-google-map"></i>
                       Address
                       <span>
-                        Behind Burjeel Hospital, Sheikh Zayed Road, Al Quoz
-                        Industrial 1, Dubai
+                        Gulf Motorcycles-Motorcycle Repairs, Behind Burjeel
+                        Hospital, Sheikh Zayed Road, 6A Street, Al Quoz
+                        Industrial 1, Dubai, UAE
                       </span>
                     </li>
                     <li>
@@ -91,7 +92,7 @@ class SideDrawer extends React.Component {
                     <li>
                       <i className="icofont-phone"></i>
                       Phone
-                      <span>+971 55 555 5555</span>
+                      <span>+971 56 455 8337</span>
                     </li>
                   </ul>
                 </div>

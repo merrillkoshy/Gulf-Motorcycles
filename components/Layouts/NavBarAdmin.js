@@ -33,7 +33,7 @@ const Navbar = (props) => {
   };
 
   let layOutCls = "";
-  let logo = "/images/mono.png";
+  let logo = "/images/logo-light.png";
   const classOne = collapsed
     ? "collapse navbar-collapse"
     : "collapse navbar-collapse show ";

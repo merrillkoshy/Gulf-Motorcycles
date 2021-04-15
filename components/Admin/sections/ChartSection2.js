@@ -30,7 +30,7 @@ const ChartSection2 = (props) => {
   });
   const monthsRecordedOpen = [...new Set(openDatesData)];
 
-  const dataArrayOpen = new Array(12).fill(0);
+  const dataArrayOpen = new Array(monthsRecordedOpen[0]).fill(0);
   monthsRecordedOpen.map((month) => {
     return (dataArrayOpen[month - 1] = openDatesData?.reduce(
       (n, x) => n + (x === month),
@@ -44,7 +44,7 @@ const ChartSection2 = (props) => {
   });
   const monthsRecorded = [...new Set(completedDatesData)];
 
-  const dataArrayClosed = new Array(12).fill(0);
+  const dataArrayClosed = new Array(monthsRecorded[0]).fill(0);
   monthsRecorded.map((month) => {
     return (dataArrayClosed[month - 1] = completedDatesData?.reduce(
       (n, x) => n + (x === month),
@@ -66,7 +66,7 @@ const ChartSection2 = (props) => {
     "Dec",
   ];
   const dataLine = {
-    labels: allMonths,
+    labels: allMonths.slice(0, monthsRecordedOpen[0]),
     datasets: [
       {
         label: "Completed Jobs",
@@ -163,9 +163,18 @@ const ChartSection2 = (props) => {
         {years &&
           years.map((year, i) => {
             return (
-              <MDBCard key={i + "yearkey" + year} className="mb-4">
+              <MDBCard
+                style={{
+                  borderRadius: 20,
+                  boxShadow: "-1px 3px 8px #0000003d",
+                }}
+                key={i + "yearkey" + year}
+                className="mb-4"
+              >
                 <MDBCardHeader>
-                  Year {year}-{year + 1}
+                  <strong>
+                    Year {year}-{year + 1}
+                  </strong>
                 </MDBCardHeader>
                 <MDBCardBody>
                   <Line data={dataLine} options={{ responsive: true }} />

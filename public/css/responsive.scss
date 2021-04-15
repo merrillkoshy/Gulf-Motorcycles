@@ -2473,6 +2473,7 @@ $paragraph_color: #818992;
     .navbar-brand {
       img {
         max-width: 80px !important;
+        filter: drop-shadow(-10px 11px 4px #0000003d);
       }
     }
   }
@@ -2913,6 +2914,7 @@ $paragraph_color: #818992;
         margin-right: 0;
         img {
           max-width: 50px !important;
+          filter: drop-shadow(-10px 11px 4px #0000003d);
         }
       }
       .brand-container {

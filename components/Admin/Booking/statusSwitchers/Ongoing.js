@@ -8,6 +8,9 @@ const Ongoing = (props) => {
 
   const handleSave = () => {
     if (status) {
+      props?.dbref.child(`/${props?.uid}`).update({
+        lastModified: Date.now(),
+      });
       props?.dbref
         .child(`/${props?.uid}/bookings/${props?.refId}`)
         .update({

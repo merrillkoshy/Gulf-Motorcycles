@@ -14,6 +14,7 @@ import Services from "../../components/Admin/Services";
 import MainServices from "../../components/Admin/MainServices";
 import registerWorker from "../../lib/registerWorker";
 import AdminDetailsPage from "../../components/Admin/AdminDetailsPage";
+import moment from "moment";
 
 const Admin = () => {
   var userAuth =
@@ -49,9 +50,9 @@ const Admin = () => {
     var startDates = [];
     var completedDates = [];
     var revenueWrapper = [];
-    var revenue = {};
 
     usersRef
+      .orderByChild("lastModified")
       .once("value", (snapshot) => {
         snapshot.forEach((snap) => {
           const userObject = snap.val();
@@ -60,7 +61,7 @@ const Admin = () => {
         });
       })
       .then(() => {
-        setUsers(userList);
+        setUsers(userList.reverse());
       })
       .then(() => {
         userList

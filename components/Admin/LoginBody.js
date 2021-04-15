@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import firebase from "../../lib/firebaseConfig";
 
 export default function Page() {
-  let logo = "/images/logo-light.png";
+  let logo = "/images/logo-dark.png";
 
   const router = useRouter();
   const [errorMsg, setErrorMsg] = useState("");

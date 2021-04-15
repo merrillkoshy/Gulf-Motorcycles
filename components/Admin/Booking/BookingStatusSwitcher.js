@@ -3,6 +3,7 @@ import Switch from "react-switch";
 
 import Ongoing from "./statusSwitchers/Ongoing";
 import Completed from "./statusSwitchers/Completed";
+import moment from "moment";
 
 const BookingStatusSwitcher = (props) => {
   const [switchStatus, setSwitchStatus] = useState(false);
@@ -20,20 +21,41 @@ const BookingStatusSwitcher = (props) => {
 
   const handleSave = () => {
     if (switchStatus) {
-      props?.dbref
-        .child(`/${props?.uid}/bookings/${props?.refId}`)
-        .update({
-          bookingStatus: "ongoing",
-          startDate: date,
-          completionDate: completionDate,
-        })
-        .then(() => {
-          props?.onHide();
-          props?.usersList();
-          props?.setStatus("ongoing");
-          setBookingStatus("ongoing");
-        });
+      props?.dbref.child(`/${props?.uid}`).update({
+        lastModified: Date.now(),
+      });
+      props?.selectedSlot
+        ? props?.dbref
+            .child(`/${props?.uid}/bookings/${props?.refId}`)
+            .update({
+              bookingStatus: "ongoing",
+              startDate: date,
+              timeSlot: selectedSlot,
+              completionDate: completionDate,
+            })
+            .then(() => {
+              props?.onHide();
+              props?.usersList();
+              props?.setStatus("ongoing");
+              setBookingStatus("ongoing");
+            })
+        : props?.dbref
+            .child(`/${props?.uid}/bookings/${props?.refId}`)
+            .update({
+              bookingStatus: "ongoing",
+              startDate: date,
+              completionDate: completionDate,
+            })
+            .then(() => {
+              props?.onHide();
+              props?.usersList();
+              props?.setStatus("ongoing");
+              setBookingStatus("ongoing");
+            });
     } else {
+      props?.dbref.child(`/${props?.uid}`).update({
+        lastModified: Date.now(),
+      });
       props?.dbref
         .child(`/${props?.uid}/bookings/${props?.refId}`)
         .update({ bookingStatus: "open" })
@@ -67,6 +89,11 @@ const BookingStatusSwitcher = (props) => {
               </label>
             </div>
             <div className={`d-${display} col w-100 text-center`}>
+              <div className="row mt-2">
+                {!props?.selectedSlot
+                  ? `Time Slot : ${props?.bookedSlot}`
+                  : `Time Slot : ${props?.selectedSlot} overridden on user's ${props?.bookedSlot}`}
+              </div>
               <div className="row mt-2">
                 Start Date
                 <input

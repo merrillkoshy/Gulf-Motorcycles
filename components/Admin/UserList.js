@@ -22,6 +22,7 @@ const UserList = (props) => {
             <Th scope="col">Address</Th>
             <Th scope="col">Email</Th>
             <Th scope="col">Phone Number</Th>
+            <Th scope="col">Last Updated</Th>
           </Tr>
         </Thead>
         <Tbody>
@@ -34,6 +35,7 @@ const UserList = (props) => {
                     <Td>{user?.address}</Td>
                     <Td>{user?.email}</Td>
                     <Td>{user?.phoneNumber}</Td>
+                    <Td>{`${new Date(user?.lastModified).toString()}`}</Td>
                   </Tr>
                 );
               })

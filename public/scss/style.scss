@@ -396,6 +396,7 @@ Navbar CSS
     .navbar-brand {
       img {
         max-width: 100px;
+        filter: drop-shadow(-10px 11px 4px #0000003d);
         height: auto;
       }
     }
