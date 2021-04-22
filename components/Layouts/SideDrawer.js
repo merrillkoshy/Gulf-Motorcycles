@@ -96,27 +96,26 @@ class SideDrawer extends React.Component {
                     </li>
                   </ul>
                 </div>
-
                 <div className="sidebar-modal-widget">
                   <h3 className="title">Connect With Us</h3>
 
                   <ul className="social-list">
                     <li>
-                      <Link href="#">
+                      <Link href="https://www.facebook.com/gulfmotorcyclerepairs/">
                         <a>
                           <i className="icofont-facebook"></i>
                         </a>
                       </Link>
                     </li>
                     <li>
-                      <Link href="#">
+                      <Link href="https://twitter.com/GulfRepairs">
                         <a>
                           <i className="icofont-twitter"></i>
                         </a>
                       </Link>
                     </li>
                     <li>
-                      <Link href="#">
+                      <Link href="https://www.instagram.com/gulfrepairs/">
                         <a>
                           <i className="icofont-instagram"></i>
                         </a>
