@@ -28,12 +28,12 @@ class Content extends Component {
                   <i className="icofont-google-map"></i>
                 </div>
                 <h3>We are Here</h3>
-                <Link href="https://goo.gl/maps/E8hFnyMBe4XR22HWA">
+                <Link href="https://goo.gl/maps/dk5XGDUJmz2VJU7s5">
                   <a>
                     <p>
-                      Gulf Motorcycles-Motorcycle Repairs, Behind Burjeel
-                      Hospital, Sheikh Zayed Road, 6A Street, Al Quoz Industrial
-                      1, Dubai, UAE
+                      Gulf Motorcycles,Al Qouz -3, Opposite Al Ahli Driving
+                      Centre, MK Ghanim Compound, Unit 45 Dubai, United Arab
+                      Emirates
                     </p>{" "}
                   </a>
                 </Link>

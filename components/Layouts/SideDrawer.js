@@ -79,9 +79,9 @@ class SideDrawer extends React.Component {
                       <i className="icofont-google-map"></i>
                       Address
                       <span>
-                        Gulf Motorcycles-Motorcycle Repairs, Behind Burjeel
-                        Hospital, Sheikh Zayed Road, 6A Street, Al Quoz
-                        Industrial 1, Dubai, UAE
+                        Gulf Motorcycles,Al Qouz -3, Opposite Al Ahli Driving
+                        Centre, MK Ghanim Compound, Unit 45 Dubai, United Arab
+                        Emirates
                       </span>
                     </li>
                     <li>

@@ -94,16 +94,17 @@ $paragraph_color: #818992;
 
       img {
         position: relative !important;
-        left: -10px !important;
+        // left: -10px !important;
+        left: 80px !important;
         top: 0 !important;
         width: 230px !important;
 
-        &:last-child {
-          position: absolute !important;
-          top: 50px !important;
-          right: 0 !important;
-          left: auto !important;
-        }
+        // &:last-child {
+        //   position: absolute !important;
+        //   top: 50px !important;
+        //   right: 0 !important;
+        //   left: auto !important;
+        // }
       }
     }
     .signup-download {

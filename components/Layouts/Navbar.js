@@ -91,11 +91,11 @@ const Navbar = (props) => {
                       <a className="nav-link">About Us</a>
                     </Link>
                   </li>
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                     <Link activeClassName="active" href="/services">
                       <a className="nav-link">Services</a>
                     </Link>
-                  </li>
+                  </li> */}
 
                   <li className="nav-item">
                     <Link activeClassName="active" href="/contact">

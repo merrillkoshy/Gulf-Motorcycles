@@ -44,10 +44,11 @@ const AboutContent = () => {
                   <img src="/images/Contact_Page_Icons-04.png" alt="image" />
                   <h3>Contact Us</h3>
                   <p>
-                    We are behind
-                    <a href="https://goo.gl/maps/E8hFnyMBe4XR22HWA">
-                      Burjeel Hospital, Sheikh Zayed Road, Al Quoz Industrial 1,
-                      Dubai
+                    We are here:
+                    <a href="https://goo.gl/maps/dk5XGDUJmz2VJU7s5">
+                      Gulf Motorcycles,Al Qouz -3, Opposite Al Ahli Driving
+                      Centre, MK Ghanim Compound, Unit 45 Dubai, United Arab
+                      Emirates
                     </a>
                   </p>
                 </div>

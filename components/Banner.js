@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Button } from "react-bootstrap";
 
 const Banner = () => {
   return (
@@ -7,6 +8,29 @@ const Banner = () => {
         <div className="d-table-cell">
           <div className="container">
             <div className="row">
+              <div className="col-lg-6 col-md-12">
+                <div className="hero-content">
+                  <h1>Repairs & Rental Services Across UAE !</h1>
+                  <p>
+                    At Gulf Motorcycles, we offer a reliable motorcycle repair
+                    services for customers in UAE. Call us today for a friendly
+                    chat about your bike.
+                  </p>
+                  <div className="badgings">
+                    <Button>Call Now</Button>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-6 col-md-12">
+                <div className="app-image">
+                  <img src="/images/MastHeader-01.png" alt="image" />
+                  {/* <img src="/images/app-screen1.png" alt="image" /> */}
+                </div>
+              </div>
+            </div>
+            {/* After App release */}
+            {/* <div className="row">
               <div className="col-lg-6 col-md-12">
                 <div className="hero-content">
                   <h1>Service Bookings Made Easy !</h1>
@@ -28,7 +52,7 @@ const Banner = () => {
                   <img src="/images/app-screen1.png" alt="image" />
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

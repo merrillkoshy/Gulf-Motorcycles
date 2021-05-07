@@ -1232,16 +1232,17 @@ Main Banner CSS
   .app-image {
     img {
       position: absolute;
-      left: 0;
+      // left: 0;
+      left: 90px;
       top: -40px;
       animation: movebounce 5s linear infinite;
       width: 400px;
 
-      &:last-child {
-        animation: movebounce 6s linear infinite;
-        left: 270px;
-        top: -20px;
-      }
+      // &:last-child {
+      //   animation: movebounce 6s linear infinite;
+      //   left: 270px;
+      //   top: -20px;
+      // }
     }
   }
   .product-image {
