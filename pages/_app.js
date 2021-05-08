@@ -11,7 +11,6 @@ export default function App({ Component, pageProps }) {
   return (
     <React.Fragment>
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charSet="utf-8" />
         <title>Gulf Motorcycles - Repairs &amp; Rentals</title>
         <meta
@@ -64,7 +63,9 @@ export default function App({ Component, pageProps }) {
         <meta
           name="og:image"
           property="og:image"
-          content={"/gulf-motorcycles-og-image.png"}
+          content={
+            "https://gulf-motorcycles.vercel.app/gulf-motorcycles-og-image.png"
+          }
           itemProp="image"
         />
         <meta name="og:type" content="website" />
@@ -109,7 +110,12 @@ export default function App({ Component, pageProps }) {
         />
         <meta name="twitter:description" content={"description"} />
         <meta name="twitter:app:country" content="ae" />
-        <meta name="twitter:image" content={"/gulf-motorcycles-og-image.png"} />
+        <meta
+          name="twitter:image"
+          content={
+            "https://gulf-motorcycles.vercel.app/gulf-motorcycles-og-image.png"
+          }
+        />
       </Head>
 
       <Preloader>
