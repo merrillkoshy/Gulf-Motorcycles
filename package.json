@@ -27,6 +27,7 @@
     "next": "^10.0.3",
     "next-offline": "^5.0.3",
     "next-sitemap": "^1.6.18",
+    "nodemailer": "^6.6.0",
     "react": "^16.14.0",
     "react-accessible-accordion": "^3.3.3",
     "react-bootstrap": "^1.5.2",
