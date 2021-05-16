@@ -10,9 +10,6 @@ import Head from "next/head";
 const Home = () => {
   return (
     <React.Fragment>
-      <Head>
-        <meta name="description" content={"description"} />
-      </Head>
       <Navbar />
       <Banner />
       <Discover />

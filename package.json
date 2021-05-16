@@ -1,7 +1,7 @@
 {
   "name": "gulf-motorcycles",
   "version": "1.0.0",
-  "description": "Best Motorcycle Repairs Pitstop in UAE",
+  "description": "Delivery bike repair &amp; rentals, bike wash, Bajaj Pulsar,Honda Unicorn, Bike Oil change",
   "main": "index.js",
   "scripts": {
     "dev": "next",
