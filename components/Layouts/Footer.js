@@ -16,21 +16,21 @@ const Footer = () => {
 
               <ul className="social-list">
                 <li>
-                  <Link href="#">
+                  <Link href="https://www.facebook.com/gulfmotorcyclerepairs/">
                     <a>
                       <i className="icofont-facebook"></i>
                     </a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="#">
+                  <Link href="https://twitter.com/GulfRepairs">
                     <a>
                       <i className="icofont-twitter"></i>
                     </a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="#">
+                  <Link href="https://www.instagram.com/gulfrepairs/">
                     <a>
                       <i className="icofont-instagram"></i>
                     </a>
@@ -59,7 +59,7 @@ const Footer = () => {
                 </li>
                 {/* <li>
                   <Link href="/services">
-                    <a>Services</a>
+                    <a href="#">Services</a>
                   </Link>
                 </li> */}
               </ul>
@@ -69,11 +69,13 @@ const Footer = () => {
           <div className="col-lg-3 col-md-6">
             <div className="single-footer-widget">
               <h3>Contact</h3>
-              <ul>+971 56 455 8337</ul>
-              <ul>info@gulfmotorcycles.com</ul>
               <ul>
-                Gulf Motorcycles,Al Qouz -3, Opposite Al Ahli Driving Centre, MK
-                Ghanim Compound, Unit 45 Dubai, United Arab Emirates
+                <li>+971 567 644 951</li>
+                <li>info@gulfmotorcycles.com</li>
+                <li>
+                  Gulf Motorcycles,Al Qouz -3, Opposite Al Ahli Driving Centre,
+                  MK Ghanim Compound, Unit 45 Dubai, United Arab Emirates
+                </li>
               </ul>
             </div>
           </div>

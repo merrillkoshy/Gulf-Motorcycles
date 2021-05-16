@@ -48,7 +48,7 @@ class Content extends Component {
                 <h3>Call Here</h3>
                 <p>
                   <Link href="#">
-                    <a>+971 56 455 8337</a>
+                    <a>+971 567 644 951</a>
                   </Link>
                 </p>
               </div>

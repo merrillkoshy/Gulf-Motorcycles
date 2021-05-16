@@ -49,7 +49,7 @@ const ServiceContent = () => {
                       <>
                         <div className="row">
                           <div className="col">
-                            <a>Service Cost</a>
+                            <a href="#">Service Cost</a>
                           </div>
                           <div style={{ textDecoration: "line-through" }}>
                             AED {service.mrp}
@@ -64,7 +64,7 @@ const ServiceContent = () => {
                     ) : (
                       <div className="row">
                         <div className="col">
-                          <a>Service Cost</a>
+                          <a href="#">Service Cost</a>
                         </div>
                         <div className="col">AED {service.salesPrice}</div>
                       </div>

@@ -92,7 +92,7 @@ class SideDrawer extends React.Component {
                     <li>
                       <i className="icofont-phone"></i>
                       Phone
-                      <span>+971 56 455 8337</span>
+                      <span>+971 567 644 951</span>
                     </li>
                   </ul>
                 </div>

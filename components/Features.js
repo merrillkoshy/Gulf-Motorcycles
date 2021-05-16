@@ -34,7 +34,7 @@ const Features = () => {
                 <div key={`serve${i}`} className="col-lg-4 col-md-6">
                   <div className="single-features-box">
                     <div className="icon">
-                      <img src={service?.icon} />
+                      <img alt={service?.serviceName} src={service?.icon} />
                     </div>
                     <h3 style={{ textTransform: "capitalize" }}>
                       {service?.serviceName}
@@ -49,7 +49,7 @@ const Features = () => {
                         );
                       })}
                     </ul> */}
-                    <a>
+                    <a href="#">
                       <strong>Service cost</strong> : AED {service?.salesPrice}
                     </a>
                   </div>
