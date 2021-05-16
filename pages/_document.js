@@ -2,6 +2,17 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
   render() {
+    const socialMediaStructuredData = {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "Gulf Motorcycles - Repairs & Rentals",
+      url: "https://www.gulfmotorcycles.com/",
+      sameAs: [
+        "https://www.facebook.com/gulfmotorcyclerepairs",
+        "https://www.instagram.com/gulfrepairs/",
+        "https://twitter.com/GulfRepairs",
+      ],
+    };
     return (
       <Html lang="en">
         <Head>
@@ -34,6 +45,27 @@ class MyDocument extends Document {
           />
           <meta name="msapplication-TileColor" content="#434343" />
           <meta name="theme-color" content="#434343"></meta>
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', ${process.env.NEXT_PUBLIC_GA_ID});
+            `,
+            }}
+          />
+
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(socialMediaStructuredData),
+            }}
+          />
         </Head>
         <body>
           <Main />
