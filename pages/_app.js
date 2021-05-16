@@ -7,13 +7,23 @@ import Head from "next/head";
 
 import GoTop from "../components/Shared/GoTop";
 import Loader from "../components/Shared/Loader";
+import { useRouter } from "next/router";
 
-import { init } from "../utils/ga";
+import GoogleTagManager from "../components/GoogleTagManager";
+
+import * as gtag from "../utils/gtag";
 
 export default function App({ Component, pageProps }) {
+  const router = useRouter();
   useEffect(() => {
-    init(process.env.NEXT_PUBLIC_GA_ID);
-  }, []);
+    const handleRouteChange = (url) => {
+      gtag.pageview(url);
+    };
+    router.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
   return (
     <React.Fragment>
       <Head>
@@ -132,8 +142,9 @@ export default function App({ Component, pageProps }) {
       </Head>
 
       <Preloader>
-        <Component {...pageProps} />
-
+        <GoogleTagManager>
+          <Component {...pageProps} />
+        </GoogleTagManager>
         <GoTop scrollStepInPx="50" delayInMs="16.66" />
 
         <Placeholder>
