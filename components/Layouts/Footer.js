@@ -73,8 +73,8 @@ const Footer = () => {
                 <li>+971 567 644 951</li>
                 <li>info@gulfmotorcycles.com</li>
                 <li>
-                  Gulf Motorcycles,Al Qouz -3, Opposite Al Ahli Driving Centre,
-                  MK Ghanim Compound, Unit 45 Dubai, United Arab Emirates
+                  Gulf Motorcycles, Al Qouz -3, Opposite Al Ahli Driving Centre,
+                  MK Ghanim Compound, Unit 45, Dubai, United Arab Emirates
                 </li>
               </ul>
             </div>

@@ -79,8 +79,8 @@ class SideDrawer extends React.Component {
                       <i className="icofont-google-map"></i>
                       Address
                       <span>
-                        Gulf Motorcycles,Al Qouz -3, Opposite Al Ahli Driving
-                        Centre, MK Ghanim Compound, Unit 45 Dubai, United Arab
+                        Gulf Motorcycles, Al Qouz -3, Opposite Al Ahli Driving
+                        Centre, MK Ghanim Compound, Unit 45, Dubai, United Arab
                         Emirates
                       </span>
                     </li>

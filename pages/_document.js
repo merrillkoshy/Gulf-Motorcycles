@@ -29,14 +29,6 @@ class MyDocument extends Document {
         addressRegion: "Dubai",
         addressCountry: "AE",
       },
-      review: {
-        "@type": "Review",
-        reviewRating: {
-          "@type": "Rating",
-          ratingValue: "5",
-          bestRating: "5",
-        },
-      },
       geo: {
         "@type": "GeoCoordinates",
         latitude: 25.1230733,

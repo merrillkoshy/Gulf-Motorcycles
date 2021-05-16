@@ -31,8 +31,8 @@ class Content extends Component {
                 <Link href="https://goo.gl/maps/dk5XGDUJmz2VJU7s5">
                   <a>
                     <p>
-                      Gulf Motorcycles,Al Qouz -3, Opposite Al Ahli Driving
-                      Centre, MK Ghanim Compound, Unit 45 Dubai, United Arab
+                      Gulf Motorcycles, Al Qouz -3, Opposite Al Ahli Driving
+                      Centre, MK Ghanim Compound, Unit 45, Dubai, United Arab
                       Emirates
                     </p>{" "}
                   </a>

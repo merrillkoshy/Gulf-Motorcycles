@@ -46,8 +46,8 @@ const AboutContent = () => {
                   <p>
                     We are here:
                     <a href="https://goo.gl/maps/dk5XGDUJmz2VJU7s5">
-                      Gulf Motorcycles,Al Qouz -3, Opposite Al Ahli Driving
-                      Centre, MK Ghanim Compound, Unit 45 Dubai, United Arab
+                      Gulf Motorcycles, Al Qouz -3, Opposite Al Ahli Driving
+                      Centre, MK Ghanim Compound, Unit 45. Dubai, United Arab
                       Emirates
                     </a>
                   </p>

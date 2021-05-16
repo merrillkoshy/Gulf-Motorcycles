@@ -149,7 +149,7 @@ export default async function handler(req, res) {
                       <table cellspacing="0" cellpadding="0">
                        <tbody><tr>
                         <td align="center" style="font-family: Geneva, Tahoma, Verdana, sans-serif;font-size: 14px;line-height: 18px;color: #ffffff;padding: 0 20px 40px;">
-                                      <br>      <br>Gulf Motorcycles,Al Qouz -3, Opposite Al Ahli Driving Centre, MK Ghanim Compound, Unit 45 Dubai, United Arab Emirates</td>
+                                      <br>      <br>Gulf Motorcycles, Al Qouz -3, Opposite Al Ahli Driving Centre, MK Ghanim Compound, Unit 45, Dubai, United Arab Emirates</td>
                        </tr>
                       </tbody></table>
                      </td>

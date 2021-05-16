@@ -46,7 +46,7 @@ div.preheader
  <table width="100%" cellspacing="0" cellpadding="0">
   <tbody><tr>
    <td class="header header--left" style="padding: 20px 10px;" align="left">
-    <a><img class="header__logo" src="http://localhost:3000/images/EmailHeader-01.png" alt="Firefox" style="display: block; border: 0;" width="158" height="auto"></a>
+    <a><img class="header__logo" src="https://gulfmotorcycles.com/images/EmailHeader-01.png" alt="Firefox" style="display: block; border: 0;" width="158" height="auto"></a>
    </td>
   </tr>
  </tbody></table>
