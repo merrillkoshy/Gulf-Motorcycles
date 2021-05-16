@@ -34,7 +34,12 @@ const Features = () => {
                 <div key={`serve${i}`} className="col-lg-4 col-md-6">
                   <div className="single-features-box">
                     <div className="icon">
-                      <img alt={service?.serviceName} src={service?.icon} />
+                      <img
+                        alt={service?.serviceName}
+                        src={service?.icon}
+                        width="500px"
+                        height="500px"
+                      />
                     </div>
                     <h3 style={{ textTransform: "capitalize" }}>
                       {service?.serviceName}
@@ -61,7 +66,7 @@ const Features = () => {
 
       <div className="features-inner-area">
         <div className="container">
-          *Cost of parts and labor are charged seperately
+          *Cost of parts and labor are charged separately
         </div>
         {/* <div className="container">
             <div className="row h-100 justify-content-center align-items-center">

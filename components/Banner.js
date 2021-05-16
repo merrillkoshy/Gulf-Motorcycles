@@ -13,8 +13,10 @@ const Banner = () => {
                   <h1>Repairs & Rental Services Across UAE !</h1>
                   <p>
                     At Gulf Motorcycles, we offer a reliable motorcycle repair
-                    services for customers in UAE. Call us today for a friendly
-                    chat about your bike.
+                    services for customers in UAE. We offer delivery bike rental
+                    services as well for the most affordable rates across the
+                    country. Call us today for a friendly chat about your bike
+                    or to rent one.
                   </p>
                   <div className="badgings">
                     <Button href="tel:+971564558337">Call Now</Button>
@@ -24,7 +26,13 @@ const Banner = () => {
 
               <div className="col-lg-6 col-md-12">
                 <div className="app-image">
-                  <img src="/images/MastHeader-01.png" alt="image" />
+                  <img
+                    loading="lazy"
+                    src="/images/MastHeader-01.png"
+                    alt="image"
+                    width="2000px"
+                    height="1679px"
+                  />
                   {/* <img src="/images/app-screen1.png" alt="image" /> */}
                 </div>
               </div>
@@ -58,23 +66,46 @@ const Banner = () => {
       </div>
 
       <div className="creative-shape">
-        <img src="/images/coglines.png" alt="bg" />
+        <img
+          src="/images/coglines.png"
+          alt="bg"
+          width="4000px"
+          height="636px"
+        />
       </div>
       <div className="shape1">
-        <img src="/images/cogwheel.svg" alt="img" style={{ opacity: 0.2 }} />
+        <img
+          src="/images/cogwheel.svg"
+          alt="img"
+          style={{ opacity: 0.2 }}
+          width="120px"
+          height="120px"
+        />
       </div>
       <div className="shape2">
-        <img src="/images/bike.svg" alt="img" />
+        <img src="/images/bike.svg" alt="img" width="149px" height="160px" />
       </div>
       <div className="shape3">
-        <img src="/images/cogwheel.svg" alt="img" style={{ opacity: 0.2 }} />
+        <img
+          src="/images/cogwheel.svg"
+          alt="img"
+          style={{ opacity: 0.2 }}
+          width="120px"
+          height="120px"
+        />
       </div>
 
       <div className="shape8 rotateme">
-        <img src="/images/tire.svg" alt="shape" />
+        <img src="/images/tire.svg" alt="shape" width="94px" height="131px" />
       </div>
       <div className="shape9">
-        <img src="/images/engine.svg" alt="shape" style={{ width: "100px" }} />
+        <img
+          src="/images/engine.svg"
+          alt="shape"
+          style={{ width: "100px" }}
+          width="100px"
+          height="95px"
+        />
       </div>
       {/* <div className="bg-gray shape-1"></div>
       <div className="shape1">

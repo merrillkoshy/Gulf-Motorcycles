@@ -9,7 +9,13 @@ const Footer = () => {
             <div className="single-footer-widget">
               <Link href="#">
                 <a className="logo">
-                  <img src="/images/logo-dark.png" alt="logo-light" />
+                  <img
+                    title="Gulf Motorcycles - Repairs & Rentals"
+                    src="/images/logo-dark.png"
+                    alt="logo-light"
+                    width="4000px"
+                    height="4000px"
+                  />
                 </a>
               </Link>
               <p>Service • Leasing • Parts</p>

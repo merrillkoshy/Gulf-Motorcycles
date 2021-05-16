@@ -8,15 +8,17 @@ class Discover extends Component {
           <div className="row h-100 justify-content-center align-items-center">
             <div className="col-lg-6 col-md-12">
               <div className="discover-content">
-                <h3>Services Overview</h3>
+                <h2>Services Overview</h2>
+
                 <p>
                   Gulf Motorcycles offers a full range of maintenance services
                   to all brands two wheeler delivery motorcyclists put up in the
                   UAE.
                 </p>
                 <p>
-                  Our professionals are trained to manage a wide range of two
-                  wheeler’s related services.
+                  Our professionals are trained to manage all brands of
+                  motorcycles and are experts at UAE's favorite delivery bikes
+                  such as Bajaj Pulsar and Honda Unicorn.
                 </p>
 
                 <ul>
@@ -33,7 +35,19 @@ class Discover extends Component {
                     <i className="icofont-check"></i> Tyres
                   </li>
                   <li>
+                    <i className="icofont-check"></i> Bike Wash
+                  </li>
+                  <li>
+                    <i className="icofont-check"></i> Oil Change
+                  </li>
+                  <li>
                     <i className="icofont-check"></i> Air Filters
+                  </li>
+                  <li>
+                    <i className="icofont-check"></i> Leasing & Renting
+                  </li>
+                  <li>
+                    <i className="icofont-check"></i> Motorcycle Parts
                   </li>
                   <li>
                     <i className="icofont-check"></i> Pick & Drop
@@ -44,7 +58,13 @@ class Discover extends Component {
 
             <div className="col-lg-6 col-md-12">
               <div className="discover-img">
-                <img src="/images/landing-page-bike.png" alt="image" />
+                <img
+                  loading="lazy"
+                  src="/images/landing-page-bike.png"
+                  alt="image"
+                  width="2000px"
+                  height="2000px"
+                />
               </div>
             </div>
           </div>

@@ -49,7 +49,7 @@ const Navbar = (props) => {
             <nav className="navbar navbar-expand-md navbar-light">
               <Link href="/">
                 <a className="navbar-brand">
-                  <img src={logo} alt="logo" />
+                  <img src={logo} alt="logo" width="4000px" height="4000px" />
                 </a>
               </Link>
               <Link href="/">

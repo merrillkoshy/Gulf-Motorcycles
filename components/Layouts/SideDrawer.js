@@ -37,7 +37,12 @@ class SideDrawer extends React.Component {
                 <h2 className="modal-title" id="myModalLabel2">
                   <Link href="/">
                     <a>
-                      <img src="/images/logo-light.png" alt="logo" />
+                      <img
+                        src="/images/logo-light.png"
+                        alt="logo"
+                        width="4000px"
+                        height="4000px"
+                      />
                     </a>
                   </Link>
                 </h2>

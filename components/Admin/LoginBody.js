@@ -41,7 +41,7 @@ export default function Page() {
           <div className="col col-lg-5 col-xl-5 col-xxl-5">
             <div className="login-form">
               <div className="logo-container row justify-content-center align-items-center">
-                <img src={logo} />
+                <img src={logo} width="4000px" height="4000px" />
               </div>
               <div className="form-container">
                 <form onSubmit={handleSubmit}>
