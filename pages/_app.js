@@ -12,7 +12,12 @@ export default function App({ Component, pageProps }) {
     <React.Fragment>
       <Head>
         <meta charSet="utf-8" />
+        <meta
+          name="google-site-verification"
+          content="sGdud-qNOXECWRhCiCnQHK1bhRqc2PJ6_NUVVPmmY_o"
+        />
         <title>Gulf Motorcycles - Repairs &amp; Rentals</title>
+        <meta name="robots" content="index, follow" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
