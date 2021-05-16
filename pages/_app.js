@@ -19,20 +19,18 @@ export default function App({ Component, pageProps }) {
         />
         <meta
           name="description"
-          content={
-            "Delivery bike repair & rentals, bike wash, Bajaj Pulsar,Honda Unicorn, Bike Oil change"
-          }
+          content="Delivery bike repair &amp; rentals, bike wash, Bajaj Pulsar,Honda Unicorn, Bike Oil change"
         />
 
         <meta
           name="og:title"
           property="og:title"
           content="Gulf Motorcycles - Repairs &amp; Rentals"
-        ></meta>
+        />
         <meta
           name="twitter:card"
           content="Gulf Motorcycles - Repairs &amp; Rentals"
-        ></meta>
+        />
         <link rel="canonical" href="https://gulfmotorcycles.com/"></link>
 
         <meta name="mobile-web-app-capable" content="yes" />
@@ -45,23 +43,19 @@ export default function App({ Component, pageProps }) {
           name="description"
           property="description"
           itemProp="description"
-          content={
-            "Delivery bike repair & rentals, bike wash, Bajaj Pulsar,Honda Unicorn, Bike Oil change"
-          }
+          content="Delivery bike repair &amp; rentals, bike wash, Bajaj Pulsar,Honda Unicorn, Bike Oil change"
         />
 
         {/* Open Graph */}
         <meta
           name="og:title"
           property="og:title"
-          content={"Gulf Motorcycles - Repairs &amp; Rentals"}
+          content="Gulf Motorcycles - Repairs &amp; Rentals"
         />
         <meta
           name="og:description"
           property="og:description"
-          content={
-            "Delivery bike repair & rentals, bike wash, Bajaj Pulsar,Honda Unicorn, Bike Oil change"
-          }
+          content="Delivery bike repair &amp; rentals, bike wash, Bajaj Pulsar,Honda Unicorn, Bike Oil change"
         />
 
         {/* Import CSS for nprogress */}
@@ -69,19 +63,19 @@ export default function App({ Component, pageProps }) {
         <meta
           name="og:image"
           property="og:image"
-          content={"https://gulfmotorcycles.com/gulf-motorcycles-og-image.png"}
+          content="https://gulfmotorcycles.com/gulf-motorcycles-og-image.png"
           itemProp="image"
         />
         <meta name="og:type" content="website" />
         <meta
           name="og:url"
           property="og:url"
-          content={"https://gulfmotorcycles.com"}
+          content="https://gulfmotorcycles.com"
         />
         <meta
           property="og:image:secure_url"
           name="og:image:secure_url"
-          content={"https://gulfmotorcycles.com"}
+          content="https://gulfmotorcycles.com"
         />
         <meta
           property="og:image:type"
@@ -93,9 +87,7 @@ export default function App({ Component, pageProps }) {
         <meta
           property="og:image:alt"
           name="og:image:alt"
-          content={
-            "Delivery bike repair & rentals, bike wash, Bajaj Pulsar,Honda Unicorn, Bike Oil change"
-          }
+          content="Delivery bike repair &amp; rentals, bike wash, Bajaj Pulsar,Honda Unicorn, Bike Oil change"
         />
         <meta
           property="og:site_name"
@@ -106,9 +98,7 @@ export default function App({ Component, pageProps }) {
         <meta property="og:type" name="og:type" content="website" />
         <meta
           itemProp="name"
-          content={
-            "Delivery bike repair & rentals, bike wash, Bajaj Pulsar,Honda Unicorn, Bike Oil change"
-          }
+          content="Delivery bike repair &amp; rentals, bike wash, Bajaj Pulsar,Honda Unicorn, Bike Oil change"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -117,18 +107,16 @@ export default function App({ Component, pageProps }) {
         <meta name="twitter:creator" content="@GulfRepairs" />
         <meta
           name="twitter:title"
-          content={"Gulf Motorcycles- Repairs & Rentals"}
+          content="Gulf Motorcycles- Repairs &amp; Rentals"
         />
         <meta
           name="twitter:description"
-          content={
-            "Delivery bike repair & rentals, bike wash, Bajaj Pulsar,Honda Unicorn, Bike Oil change"
-          }
+          content="Delivery bike repair &amp; rentals, bike wash, Bajaj Pulsar,Honda Unicorn, Bike Oil change"
         />
         <meta name="twitter:app:country" content="ae" />
         <meta
           name="twitter:image"
-          content={"https://gulfmotorcycles.com/gulf-motorcycles-og-image.png"}
+          content="https://gulfmotorcycles.com/gulf-motorcycles-og-image.png"
         />
       </Head>
 
