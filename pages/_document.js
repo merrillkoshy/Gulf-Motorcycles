@@ -7,12 +7,76 @@ class MyDocument extends Document {
       "@type": "Organization",
       name: "Gulf Motorcycles - Repairs & Rentals",
       url: "https://www.gulfmotorcycles.com/",
+      logo: "https://www.gulfmotorcycles.com/logo.png",
       sameAs: [
         "https://www.facebook.com/gulfmotorcyclerepairs",
         "https://www.instagram.com/gulfrepairs/",
         "https://twitter.com/GulfRepairs",
       ],
     };
+    const localBusinessStructuredData = {
+      "@context": "https://schema.org",
+      "@type": "MotorcycleRepair",
+      image: "https://www.gulfmotorcycles.com/logo.png",
+      "@id": "https://www.gulfmotorcycles.com",
+      name: "Gulf Motorcycles - Repairs & Rentals",
+      priceRange: "$$",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress:
+          "Al Qouz -3, Opposite Al Ahli Driving Centre, MK Ghanim Compound, Unit 45",
+        addressLocality: "Dubai",
+        addressRegion: "Dubai",
+        addressCountry: "AE",
+      },
+      review: {
+        "@type": "Review",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+          bestRating: "5",
+        },
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 25.1230733,
+        longitude: 55.2237186,
+      },
+      url: "https://goo.gl/maps/xJiZNwpVxPFJNLw3A",
+      telephone: "+971567644951",
+      openingHoursSpecification: [
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: ["Monday", "Tuesday"],
+          opens: "09:00",
+          closes: "20:00",
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: ["Wednesday", "Thursday", "Friday"],
+          opens: "09:00",
+          closes: "20:00",
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: "Saturday",
+          opens: "09:00",
+          closes: "20:00",
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: "Sunday",
+          opens: "09:00",
+          closes: "20:00",
+        },
+      ],
+      sameAs: [
+        "https://www.facebook.com/gulfmotorcyclerepairs",
+        "https://www.instagram.com/gulfrepairs/",
+        "https://twitter.com/GulfRepairs",
+      ],
+    };
+
     return (
       <Html lang="en">
         <Head>
@@ -59,7 +123,12 @@ class MyDocument extends Document {
             `,
             }}
           />
-
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(localBusinessStructuredData),
+            }}
+          />
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{

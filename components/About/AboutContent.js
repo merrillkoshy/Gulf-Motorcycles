@@ -83,9 +83,9 @@ const AboutContent = () => {
                 most importantly, the peace of ride as we guarantee your vehicle
                 will be safer than how it came to us!
               </p>
-              <Link href="/services">
+              {/* <Link href="/services">
                 <a className="btn btn-primary">Our Services</a>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
