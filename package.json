@@ -21,6 +21,7 @@
     "axios": "^0.21.1",
     "cors": "^2.8.5",
     "firebase": "^8.3.0",
+    "ga-4-react": "^0.1.281",
     "localforage": "^1.9.0",
     "mdbreact": "^5.0.1",
     "moment": "^2.29.1",

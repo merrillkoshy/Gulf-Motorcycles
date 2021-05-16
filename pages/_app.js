@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import "../public/scss/style.scss";
 
 import { Preloader, Placeholder } from "react-preloading-screen";
@@ -7,7 +8,12 @@ import Head from "next/head";
 import GoTop from "../components/Shared/GoTop";
 import Loader from "../components/Shared/Loader";
 
+import { init } from "../utils/ga";
+
 export default function App({ Component, pageProps }) {
+  useEffect(() => {
+    init(process.env.NEXT_PUBLIC_GA_ID);
+  }, []);
   return (
     <React.Fragment>
       <Head>

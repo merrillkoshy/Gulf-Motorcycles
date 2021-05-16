@@ -72,6 +72,15 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MTWWCRX');`,
+            }}
+          ></script>
           <link rel="icon" type="image/png" href="/images/favicon.png"></link>
           <link
             rel="apple-touch-icon"
@@ -101,20 +110,18 @@ class MyDocument extends Document {
           />
           <meta name="msapplication-TileColor" content="#434343" />
           <meta name="theme-color" content="#434343"></meta>
-          <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
-          />
-          <script
+        </Head>
+        <body>
+          <noscript
             dangerouslySetInnerHTML={{
-              __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
-            `,
+              __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTWWCRX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
             }}
-          />
+          ></noscript>
+
+          <Main />
+          <NextScript />
+
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{
@@ -127,10 +134,6 @@ class MyDocument extends Document {
               __html: JSON.stringify(socialMediaStructuredData),
             }}
           />
-        </Head>
-        <body>
-          <Main />
-          <NextScript />
         </body>
       </Html>
     );
