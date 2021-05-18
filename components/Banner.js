@@ -19,7 +19,7 @@ const Banner = () => {
                     bike or to rent one.
                   </p>
                   <div className="badgings">
-                    <Button href="tel:+971564558337">Call Now</Button>
+                    <Button href="tel:+971567644951">Call Now</Button>
                   </div>
                 </div>
               </div>
