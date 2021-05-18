@@ -13,10 +13,10 @@ const Banner = () => {
                   <h1>Repairs & Rental Services Across UAE !</h1>
                   <p>
                     At Gulf Motorcycles, we offer a reliable motorcycle repair
-                    services for customers in UAE. We offer delivery bike rental
-                    services as well for the most affordable rates across the
-                    country. Call us today for a friendly chat about your bike
-                    or to rent one.
+                    services for customers across UAE. We offer delivery bike
+                    rental services as well for the most affordable rates across
+                    the country. Call us today for a friendly chat about your
+                    bike or to rent one.
                   </p>
                   <div className="badgings">
                     <Button href="tel:+971564558337">Call Now</Button>

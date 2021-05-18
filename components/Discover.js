@@ -12,8 +12,8 @@ class Discover extends Component {
 
                 <p>
                   Gulf Motorcycles offers a full range of maintenance services
-                  to all brands two wheeler delivery motorcyclists put up in the
-                  UAE.
+                  and a wide array of spare parts ensuring complete care for any
+                  two wheeler delivery motorcycles across UAE.
                 </p>
                 <p>
                   Our professionals are trained to manage all brands of
