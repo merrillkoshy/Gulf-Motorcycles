@@ -11,6 +11,7 @@ class MyDocument extends Document {
       url: "https://www.gulfmotorcycles.com/",
       logo: "https://www.gulfmotorcycles.com/logo.png",
       sameAs: [
+        "https://g.page/gulfMotorcycles?gm",
         "https://www.facebook.com/gulfmotorcyclerepairs",
         "https://www.instagram.com/gulfrepairs/",
         "https://twitter.com/GulfRepairs",
@@ -36,7 +37,7 @@ class MyDocument extends Document {
         latitude: 25.1230733,
         longitude: 55.2237186,
       },
-      url: "https://goo.gl/maps/xJiZNwpVxPFJNLw3A",
+      url: "https://g.page/gulfMotorcycles?gm",
       telephone: "+971567644951",
       openingHoursSpecification: [
         {
@@ -65,6 +66,7 @@ class MyDocument extends Document {
         },
       ],
       sameAs: [
+        "https://g.page/gulfMotorcycles?gm",
         "https://www.facebook.com/gulfmotorcyclerepairs",
         "https://www.instagram.com/gulfrepairs/",
         "https://twitter.com/GulfRepairs",
