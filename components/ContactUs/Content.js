@@ -51,6 +51,11 @@ class Content extends Component {
                     <a>+971 567 644 951</a>
                   </Link>
                 </p>
+                <p>
+                  <Link href="#">
+                    <a>04 548 9786</a>
+                  </Link>
+                </p>
               </div>
             </div>
           </div>

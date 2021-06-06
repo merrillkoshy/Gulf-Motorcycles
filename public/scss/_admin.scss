@@ -12,9 +12,10 @@ $transition: 0.5s;
 .admin-login {
   .logo-container {
     height: 200px;
+    padding: 0 50px;
     img {
       max-width: 100%;
-      max-height: 100%;
+      height: auto;
     }
   }
   .form-container {

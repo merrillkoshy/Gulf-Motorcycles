@@ -76,6 +76,7 @@ const Footer = () => {
             <div className="single-footer-widget">
               <h3>Contact</h3>
               <ul>
+                <li>04 548 9786</li>
                 <li>+971 567 644 951</li>
                 <li>info@gulfmotorcycles.com</li>
                 <li>
