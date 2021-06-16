@@ -42,7 +42,7 @@ export default function App({ Component, pageProps }) {
         />
         <meta
           name="description"
-          content="Low cost Motorcycle repairs and maintenance workshop in Dubai offering major and minor services. New bikes for rent. Delivery bike box, Delivery bike repair &amp; rentals, bike wash, Bajaj Pulsar, Honda Unicorn, Bike Oil change motorcycle workshop in Dubai near me"
+          content="Delivery bike repairs and service. New bikes for rent.  delivery box, bike wash, bajaj pulsar, honda unicorn, oil change, low cost motorcycle workshop in Dubai near me."
         />
 
         <meta
@@ -66,7 +66,7 @@ export default function App({ Component, pageProps }) {
           name="description"
           property="description"
           itemProp="description"
-          content="Low cost Motorcycle repairs and maintenance workshop in Dubai offering major and minor services. New bikes for rent. Delivery bike box, Delivery bike repair &amp; rentals, bike wash, Bajaj Pulsar, Honda Unicorn, Bike Oil change motorcycle workshop in Dubai near me"
+          content="Delivery bike repairs and service. New bikes for rent.  delivery box, bike wash, bajaj pulsar, honda unicorn, oil change, low cost motorcycle workshop in Dubai near me."
         />
 
         {/* Open Graph */}
@@ -78,7 +78,7 @@ export default function App({ Component, pageProps }) {
         <meta
           name="og:description"
           property="og:description"
-          content="Low cost Motorcycle repairs and maintenance workshop in Dubai offering major and minor services. New bikes for rent. Delivery bike box, Delivery bike repair &amp; rentals, bike wash, Bajaj Pulsar, Honda Unicorn, Bike Oil change motorcycle workshop in Dubai near me"
+          content="Delivery bike repairs and service. New bikes for rent.  delivery box, bike wash, bajaj pulsar, honda unicorn, oil change, low cost motorcycle workshop in Dubai near me."
         />
 
         {/* Import CSS for nprogress */}
@@ -110,7 +110,7 @@ export default function App({ Component, pageProps }) {
         <meta
           property="og:image:alt"
           name="og:image:alt"
-          content="Low cost Motorcycle repairs and maintenance workshop in Dubai offering major and minor services. New bikes for rent. Delivery bike box, Delivery bike repair &amp; rentals, bike wash, Bajaj Pulsar, Honda Unicorn, Bike Oil change motorcycle workshop in Dubai near me"
+          content="Delivery bike repairs and service. New bikes for rent.  delivery box, bike wash, bajaj pulsar, honda unicorn, oil change, low cost motorcycle workshop in Dubai near me."
         />
         <meta
           property="og:site_name"
@@ -121,7 +121,7 @@ export default function App({ Component, pageProps }) {
         <meta property="og:type" name="og:type" content="website" />
         <meta
           itemProp="name"
-          content="Low cost Motorcycle repairs and maintenance workshop in Dubai offering major and minor services. New bikes for rent. Delivery bike box, Delivery bike repair &amp; rentals, bike wash, Bajaj Pulsar, Honda Unicorn, Bike Oil change motorcycle workshop in Dubai near me"
+          content="Delivery bike repairs and service. New bikes for rent.  delivery box, bike wash, bajaj pulsar, honda unicorn, oil change, low cost motorcycle workshop in Dubai near me."
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -134,7 +134,7 @@ export default function App({ Component, pageProps }) {
         />
         <meta
           name="twitter:description"
-          content="Low cost Motorcycle repairs and maintenance workshop in Dubai offering major and minor services. New bikes for rent. Delivery bike box, Delivery bike repair &amp; rentals, bike wash, Bajaj Pulsar, Honda Unicorn, Bike Oil change motorcycle workshop in Dubai near me"
+          content="Delivery bike repairs and service. New bikes for rent.  delivery box, bike wash, bajaj pulsar, honda unicorn, oil change, low cost motorcycle workshop in Dubai near me."
         />
         <meta name="twitter:app:country" content="ae" />
         <meta
