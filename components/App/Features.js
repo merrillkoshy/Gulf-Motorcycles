@@ -49,7 +49,7 @@ class Features extends Component {
                         <div className="row h-100 justify-content-center align-items-center">
                             <div className="col-lg-6 col-md-12">
                                 <div className="features-image">
-                                    <img src='/images/features-img1.png' alt="image" />
+                                    <img src='/images/features-img1.png' alt="Gulf Motorcycle Repairs Dubai" />
                                 </div>
                             </div>
 
@@ -83,7 +83,7 @@ class Features extends Component {
                         </div>
                     </div>
                 </div>
-                
+
                 <div className="shape7"><img src='/images/shape7.png' alt="shape" /></div>
                 <div className="shape3"><img src='/images/shape3.png' alt="img" /></div>
                 <div className="bg-gray shape-1"></div>

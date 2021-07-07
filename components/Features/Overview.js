@@ -15,7 +15,7 @@ class Overview extends Component {
                     <div className="overview-box">
                         <div className="row h-100 justify-content-center align-items-center">
                             <div className="col-lg-6 col-md-6 overview-img">
-                                <img src='/images/overview-1.png' alt="image" />
+                                <img src='/images/overview-1.png' alt="Gulf Motorcycle Repairs Dubai" />
                             </div>
 
                             <div className="col-lg-6 col-md-6 overview-content">
@@ -57,7 +57,7 @@ class Overview extends Component {
                             </div>
 
                             <div className="col-lg-6 col-md-6 overview-img">
-                                <img src='/images/overview-1.png' alt="image" />
+                                <img src='/images/overview-1.png' alt="Gulf Motorcycle Repairs Dubai" />
                             </div>
                         </div>
                     </div>
@@ -65,7 +65,7 @@ class Overview extends Component {
                     <div className="overview-box">
                         <div className="row h-100 justify-content-center align-items-center">
                             <div className="col-lg-6 col-md-6 overview-img">
-                                <img src='/images/overview-1.png' alt="image" />
+                                <img src='/images/overview-1.png' alt="Gulf Motorcycle Repairs Dubai" />
                             </div>
 
                             <div className="col-lg-6 col-md-6 overview-content">
@@ -105,7 +105,7 @@ class Overview extends Component {
                             </div>
 
                             <div className="col-lg-6 col-md-6 overview-img">
-                                <img src='/images/overview-1.png' alt="image" />
+                                <img src='/images/overview-1.png' alt="Gulf Motorcycle Repairs Dubai" />
                             </div>
                         </div>
                     </div>

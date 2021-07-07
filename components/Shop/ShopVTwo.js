@@ -6,7 +6,7 @@ import { addToCart } from '../../store/actions/cartActions';
 class ShopVTwo extends Component {
 
     handleAddToCart = (id) => {
-        this.props.addToCart(id); 
+        this.props.addToCart(id);
     }
 
     render() {
@@ -25,7 +25,7 @@ class ShopVTwo extends Component {
                                                     <p>Showing 1–16 of 100 results</p>
                                                 </div>
                                             </div>
-            
+
                                             <div className="col-lg-5 col-md-5">
                                                 <div className="woocommerce-topbar-ordering">
                                                     <form>
@@ -53,7 +53,7 @@ class ShopVTwo extends Component {
                                                 <img src={data.image} alt="item" />
 
                                                 <Link href="#">
-                                                    <a 
+                                                    <a
                                                         className="add-to-cart-btn"
                                                         onClick={(e) => {
                                                             e.preventDefault(); this.handleAddToCart(data.id)
@@ -95,15 +95,15 @@ class ShopVTwo extends Component {
                                     <div className="pagination-area">
                                         <nav aria-label="Page navigation example">
                                             <ul className="pagination justify-content-center">
-                                            
+
                                                 <li className="page-item"><a className="page-link" href="#"><i className="icofont-double-left"></i></a></li>
-                                                
+
                                                 <li className="page-item active"><a className="page-link" href="#">1</a></li>
-                                                
+
                                                 <li className="page-item"><a className="page-link" href="#">2</a></li>
-                                                
+
                                                 <li className="page-item"><a className="page-link" href="#">3</a></li>
-                                                
+
                                                 <li className="page-item"><a className="page-link" href="#"><i className="icofont-double-right"></i></a></li>
                                             </ul>
                                         </nav>
@@ -111,7 +111,7 @@ class ShopVTwo extends Component {
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div className="col-lg-4 col-md-12">
                             <div className="sidebar-area">
                                 <div className="widget widget-search">
@@ -135,11 +135,11 @@ class ShopVTwo extends Component {
                                         <li><a href="#"><i className="icofont-bubble-right"></i> Smart TV</a></li>
                                     </ul>
                                 </div>
-                                
+
                                 <div className="widget widget_recent_products">
                                     <h3 className="widget-title">Recent Post</h3>
                                     <div className="bar"></div>
-                                    
+
                                     <ul>
                                         <li>
                                             <div className="recent-products-thumb">
@@ -249,16 +249,16 @@ class ShopVTwo extends Component {
                                         <a href="#">Design</a>
                                     </div>
                                 </div>
-                                
+
                                 <div className="widget widget_text">
                                     <h3 className="widget-title">Instagram</h3>
                                     <div className="bar"></div>
-                                    
+
                                     <ul>
                                         <li>
                                             <Link href="#">
                                                 <a>
-                                                    <img src='/images/work-img1.jpg' alt="image" />
+                                                    <img src='/images/work-img1.jpg' alt="Gulf Motorcycle Repairs Dubai" />
                                                 </a>
                                             </Link>
                                         </li>
@@ -266,7 +266,7 @@ class ShopVTwo extends Component {
                                         <li>
                                             <Link href="#">
                                                 <a>
-                                                    <img src='/images/work-img2.jpg' alt="image" />
+                                                    <img src='/images/work-img2.jpg' alt="Gulf Motorcycle Repairs Dubai" />
                                                 </a>
                                             </Link>
                                         </li>
@@ -274,7 +274,7 @@ class ShopVTwo extends Component {
                                         <li>
                                             <Link href="#">
                                                 <a>
-                                                    <img src='/images/work-img3.jpg' alt="image" />
+                                                    <img src='/images/work-img3.jpg' alt="Gulf Motorcycle Repairs Dubai" />
                                                 </a>
                                             </Link>
                                         </li>
@@ -282,7 +282,7 @@ class ShopVTwo extends Component {
                                         <li>
                                             <Link href="#">
                                                 <a>
-                                                    <img src='/images/work-img4.jpg' alt="image" />
+                                                    <img src='/images/work-img4.jpg' alt="Gulf Motorcycle Repairs Dubai" />
                                                 </a>
                                             </Link>
                                         </li>
@@ -290,7 +290,7 @@ class ShopVTwo extends Component {
                                         <li>
                                             <Link href="#">
                                                 <a>
-                                                    <img src='/images/work-img5.jpg' alt="image" />
+                                                    <img src='/images/work-img5.jpg' alt="Gulf Motorcycle Repairs Dubai" />
                                                 </a>
                                             </Link>
                                         </li>
@@ -298,7 +298,7 @@ class ShopVTwo extends Component {
                                         <li>
                                             <Link href="#">
                                                 <a>
-                                                    <img src='/images/work-img6.jpg' alt="image" />
+                                                    <img src='/images/work-img6.jpg' alt="Gulf Motorcycle Repairs Dubai" />
                                                 </a>
                                             </Link>
                                         </li>
@@ -319,7 +319,7 @@ const mapStateToProps = (state) => {
     }
 }
 
-const mapDispatchToProps= (dispatch) => {
+const mapDispatchToProps = (dispatch) => {
     return {
         addToCart: (id) => { dispatch(addToCart(id)) }
     }

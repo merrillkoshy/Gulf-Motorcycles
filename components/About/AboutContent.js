@@ -10,17 +10,16 @@ const AboutContent = () => {
             <div className="row">
               <div className="col-lg-6 col-md-6">
                 <div className="single-holder-box">
-                  <img src="/images/Contact_Page_Icons-03.png" alt="image" />
+                  <img src="/images/Contact_Page_Icons-03.png" alt="Gulf Motorcycle Repairs Dubai" />
                   <h3>Our Company</h3>
                   <p>
-                    Gulf Motorcycles offers a full range of maintenance services
-                    to all brands two wheeler delivery motorcyclists put up in
-                    the UAE.
+                    Gulf Motorcycles offers a full range of repairs & maintenance services
+                    to all brands of two wheeler delivery motorcycles in Dubai, located at Al Quoz.
                   </p>
                 </div>
 
                 <div className="single-holder-box mt-30">
-                  <img src="/images/Contact_Page_Icons-01.png" alt="image" />
+                  <img src="/images/Contact_Page_Icons-01.png" alt="Gulf Motorcycle Repairs Dubai" />
                   <h3>Pick and Drop</h3>
                   <p>
                     Bringing you the most convenient means to fix your ride, we
@@ -32,16 +31,16 @@ const AboutContent = () => {
 
               <div className="col-lg-6 col-md-6">
                 <div className="single-holder-box mt-50">
-                  <img src="/images/Contact_Page_Icons-02.png" alt="image" />
+                  <img src="/images/Contact_Page_Icons-02.png" alt="Gulf Motorcycle Repairs Dubai" />
                   <h3>Who we are</h3>
                   <p>
                     Our professionals are trained to manage a wide range of two
-                    wheeler’s related services.
+                    wheeler related services.
                   </p>
                 </div>
 
                 <div className="single-holder-box mt-30">
-                  <img src="/images/Contact_Page_Icons-04.png" alt="image" />
+                  <img src="/images/Contact_Page_Icons-04.png" alt="Gulf Motorcycle Repairs Dubai" />
                   <h3>Contact Us</h3>
                   <p>
                     We are here:
@@ -62,26 +61,16 @@ const AboutContent = () => {
                 <h2>Its taken care of!</h2>
                 <div className="bar"></div>
                 <p>
-                  Found by engineers in track racing, Gulf Motorcycles -
-                  Motorcycle Repairs was formed to offer the most affordable
-                  services to motorcycles of all brands, specialising in
-                  delivery bikes.
+                  Gulf Motorcycles was started with the sole intention to offer the most affordable repair and maintenance services for delivery motorcycles in Dubai.
                 </p>
               </div>
 
               <p>
-                Bringing you the best talent with the tools, we are taking our
-                services to the next level with picking your vehicle from your
-                residence/office and administering the best service methods and
-                finally dropping your vehicle back to where we picked it up,
-                good as new!
+                Handpicked for their talent with all kinds of work, our team of highly-trained mechanics undertake the best quality work for our customers ensuring that we remain within your budget expectations.
               </p>
 
               <p>
-                As affordability and best prices are our stand-outs, leaving
-                your vehicle with us will leave you with your peace of mind and
-                most importantly, the peace of ride as we guarantee your vehicle
-                will be safer than how it came to us!
+                Affordability and quality service is our motto. It is important to us that customers can rely on Gulf Motorcycles with a peace of mind, and most importantly, the peace of ride.
               </p>
               {/* <Link href="/services">
                 <a className="btn btn-primary">Our Services</a>

@@ -15,7 +15,7 @@ class Content extends Component {
                 <h3>Mail Here</h3>
 
                 <p>
-                  <Link href="#">
+                  <Link href="mailto:info@gulfmotorcycles.com">
                     <a>info@gulfmotorcycles.com</a>
                   </Link>
                 </p>

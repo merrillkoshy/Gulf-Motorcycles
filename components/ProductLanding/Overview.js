@@ -9,7 +9,7 @@ class Overview extends Component {
                     <div className="overview-box">
                         <div className="row h-100 justify-content-center align-items-center">
                             <div className="col-lg-6 col-md-6 overview-img">
-                                <img src='/images/overview-1.png' alt="image" />
+                                <img src='/images/overview-1.png' alt="Gulf Motorcycle Repairs Dubai" />
                             </div>
 
                             <div className="col-lg-6 col-md-6 overview-content">
@@ -22,7 +22,7 @@ class Overview extends Component {
                                     <li>High Security</li>
                                     <li>Free Updates</li>
                                 </ul>
-                                <Link  href="#">
+                                <Link href="#">
                                     <a className="btn btn-primary">Read More</a>
                                 </Link>
                             </div>
@@ -58,7 +58,7 @@ class Overview extends Component {
                             </div>
 
                             <div className="col-lg-4 overview-img">
-                                <img src='/images/feature-img-with-app.png' alt="image" />
+                                <img src='/images/feature-img-with-app.png' alt="Gulf Motorcycle Repairs Dubai" />
                             </div>
 
                             <div className="col-lg-4 col-md-6">
@@ -105,7 +105,7 @@ class Overview extends Component {
                             </div>
 
                             <div className="col-lg-6 col-md-6 overview-img">
-                                <img src='/images/overview-4.png' alt="image" />
+                                <img src='/images/overview-4.png' alt="Gulf Motorcycle Repairs Dubai" />
                             </div>
                         </div>
                     </div>

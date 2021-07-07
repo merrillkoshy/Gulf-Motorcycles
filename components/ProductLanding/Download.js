@@ -26,8 +26,8 @@ class Download extends React.Component {
 
                         <div className="col-lg-6 col-md-12">
                             <div className="download-image">
-                                <img src='/images/app-img1.png' alt="image" />
-                                <img src='/images/app-img2.png' alt="image" />
+                                <img src='/images/app-img1.png' alt="Gulf Motorcycle Repairs Dubai" />
+                                <img src='/images/app-img2.png' alt="Gulf Motorcycle Repairs Dubai" />
                             </div>
                         </div>
                     </div>

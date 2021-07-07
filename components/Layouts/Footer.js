@@ -76,9 +76,9 @@ const Footer = () => {
             <div className="single-footer-widget">
               <h3>Contact</h3>
               <ul>
-                <li>04 548 9786</li>
-                <li>+971 567 644 951</li>
-                <li>info@gulfmotorcycles.com</li>
+                <li><a href="tel:+97145489786">+971 4 548 9786</a></li>
+                <li><a href="tel:+971567644951">+971 567 644 951</a></li>
+                <li><a href="mailto:info@gulfmotorcycles.com">info@gulfmotorcycles.com</a></li>
                 <li>
                   Gulf Motorcycles, Al Qouz -3, Opposite Al Ahli Driving Centre,
                   MK Ghanim Compound, Unit 45, Dubai, United Arab Emirates

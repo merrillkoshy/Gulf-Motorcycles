@@ -26,13 +26,13 @@ class Features extends Component {
                             <div className="row">
                                 <div className="col-lg-6 col-md-6">
                                     <div className="single-holder-box mt-50">
-                                        <img src='/images/watch-1.png' alt="image" />
+                                        <img src='/images/watch-1.png' alt="Gulf Motorcycle Repairs Dubai" />
                                         <h3>Camera Resulation</h3>
                                         <p>Duis hendrerit eget dolor non lora pulvinar. In conse.</p>
                                     </div>
 
                                     <div className="single-holder-box mt-30">
-                                        <img src='/images/watch-2.png' alt="image" />
+                                        <img src='/images/watch-2.png' alt="Gulf Motorcycle Repairs Dubai" />
                                         <h3>High Speed Shooting</h3>
                                         <p>Duis hendrerit eget dolor non lora pulvinar. In conse.</p>
                                     </div>
@@ -40,13 +40,13 @@ class Features extends Component {
 
                                 <div className="col-lg-6 col-md-6">
                                     <div className="single-holder-box">
-                                        <img src='/images/watch-2.png' alt="image" />
+                                        <img src='/images/watch-2.png' alt="Gulf Motorcycle Repairs Dubai" />
                                         <h3>Powerful Control Panel</h3>
                                         <p>Duis hendrerit eget dolor non lora pulvinar. In conse.</p>
                                     </div>
 
                                     <div className="single-holder-box mt-30">
-                                        <img src='/images/watch-1.png' alt="image" />
+                                        <img src='/images/watch-1.png' alt="Gulf Motorcycle Repairs Dubai" />
                                         <h3>Healthy Battery Life</h3>
                                         <p>Duis hendrerit eget dolor non lora pulvinar. In conse.</p>
                                     </div>
@@ -89,13 +89,13 @@ class Features extends Component {
 
                             <div className="col-lg-6 col-md-12">
                                 <div className="features-image text-center">
-                                    <img src='/images/watch-1.png' alt="image" />
+                                    <img src='/images/watch-1.png' alt="Gulf Motorcycle Repairs Dubai" />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <div className="shape7"><img src='/images/shape7.png' alt="shape" /></div>
                 <div className="shape3"><img src='/images/shape3.png' alt="img" /></div>
                 <div className="bg-gray shape-1"></div>

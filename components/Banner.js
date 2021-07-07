@@ -10,11 +10,11 @@ const Banner = () => {
             <div className="row">
               <div className="col-lg-6 col-md-12">
                 <div className="hero-content">
-                  <h1>Repairs & Rental Services Across UAE !</h1>
+                  <h1>Repairs & Rental Services in Duabi</h1>
                   <p>
-                    At Gulf Motorcycles, we offer a reliable motorcycle repair
-                    services for customers across UAE. We offer delivery bike
-                    rental services as well for the most affordable rates across
+                    At Gulf Motorcycles, we offer reliable motorcycle repair
+                    services for customers in Dubai, located at Al Quoz. We also offer delivery bike
+                    rental services for the most affordable rates across
                     the country. Call us today for a friendly chat about your
                     bike or to rent one.
                   </p>
@@ -29,11 +29,11 @@ const Banner = () => {
                   <img
                     loading="lazy"
                     src="/images/MastHeader-01.png"
-                    alt="image"
+                    alt="Gulf Motorcycle Repairs Dubai"
                     width="2000px"
                     height="1679px"
                   />
-                  {/* <img src="/images/app-screen1.png" alt="image" /> */}
+                  {/* <img src="/images/app-screen1.png" alt="Gulf Motorcycle Repairs Dubai" /> */}
                 </div>
               </div>
             </div>
@@ -48,16 +48,16 @@ const Banner = () => {
                     of your vehicle !
                   </p>
                   <div className="badgings">
-                    <img src="/images/AppStoreBadge.png" alt="image" />
-                    <img src="/images/PlayStoreBadge.png" alt="image" />
+                    <img src="/images/AppStoreBadge.png" alt="Gulf Motorcycle Repairs Dubai" />
+                    <img src="/images/PlayStoreBadge.png" alt="Gulf Motorcycle Repairs Dubai" />
                   </div>
                 </div>
               </div>
 
               <div className="col-lg-6 col-md-12">
                 <div className="app-image">
-                  <img src="/images/app-screen2.png" alt="image" />
-                  <img src="/images/app-screen1.png" alt="image" />
+                  <img src="/images/app-screen2.png" alt="Gulf Motorcycle Repairs Dubai" />
+                  <img src="/images/app-screen1.png" alt="Gulf Motorcycle Repairs Dubai" />
                 </div>
               </div>
             </div> */}

@@ -13,7 +13,7 @@ class Discover extends Component {
                 <p>
                   Gulf Motorcycles offers a full range of maintenance services
                   and a wide array of spare parts ensuring complete care for any
-                  two wheeler delivery motorcycles across UAE.
+                  two wheeler delivery motorcycles across in Dubai.
                 </p>
                 <p>
                   Our professionals are trained to manage all brands of
@@ -29,7 +29,7 @@ class Discover extends Component {
                     <i className="icofont-check"></i> Branding & Painting
                   </li>
                   <li>
-                    <i className="icofont-check"></i> Body & Lights
+                    <i className="icofont-check"></i> General Maintenance
                   </li>
                   <li>
                     <i className="icofont-check"></i> Tyres
@@ -41,7 +41,7 @@ class Discover extends Component {
                     <i className="icofont-check"></i> Oil Change
                   </li>
                   <li>
-                    <i className="icofont-check"></i> Air Filters
+                    <i className="icofont-check"></i> Roadside Assistance
                   </li>
                   <li>
                     <i className="icofont-check"></i> Leasing & Renting
@@ -61,7 +61,7 @@ class Discover extends Component {
                 <img
                   loading="lazy"
                   src="/images/landing-page-bike.png"
-                  alt="image"
+                  alt="Gulf Motorcycle Repairs Dubai"
                   width="2000px"
                   height="2000px"
                 />

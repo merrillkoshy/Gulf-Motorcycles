@@ -8,7 +8,7 @@ class NewFeatures extends Component {
                     <div className="row">
                         <div className="col-lg-6 col-md-12">
                             <div className="new-features-img">
-                                <img src='/images/feature-img-with-app.png' alt="image" />
+                                <img src='/images/feature-img-with-app.png' alt="Gulf Motorcycle Repairs Dubai" />
                             </div>
                         </div>
 
