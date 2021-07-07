@@ -10,7 +10,7 @@ const Banner = () => {
             <div className="row">
               <div className="col-lg-6 col-md-12">
                 <div className="hero-content">
-                  <h1>Repairs & Rental Services in Duabi</h1>
+                  <h1>Repairs & Rental Services in Dubai</h1>
                   <p>
                     At Gulf Motorcycles, we offer reliable motorcycle repair
                     services for customers in Dubai, located at Al Quoz. We also offer delivery bike
