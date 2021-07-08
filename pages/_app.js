@@ -54,7 +54,7 @@ export default function App({ Component, pageProps }) {
           name="twitter:card"
           content="Gulf Motorcycles - Repairs &amp; Rentals"
         />
-        <link rel="canonical" href="https://gulfmotorcycles.com/"></link>
+        <link rel="canonical" href="https://www.gulfmotorcycles.com/"></link>
 
         <meta name="mobile-web-app-capable" content="yes" />
 
