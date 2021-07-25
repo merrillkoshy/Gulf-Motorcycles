@@ -91,6 +91,11 @@ const Navbar = (props) => {
                       <a className="nav-link">About Us</a>
                     </Link>
                   </li>
+                  <li className="nav-item">
+                    <Link activeClassName="active" href="/gallery">
+                      <a className="nav-link">Gallery</a>
+                    </Link>
+                  </li>
                   {/* <li className="nav-item">
                     <Link activeClassName="active" href="/services">
                       <a className="nav-link">Services</a>

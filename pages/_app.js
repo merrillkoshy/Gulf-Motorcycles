@@ -33,7 +33,7 @@ export default function App({ Component, pageProps }) {
           content="sGdud-qNOXECWRhCiCnQHK1bhRqc2PJ6_NUVVPmmY_o"
         />
         <title>
-          Gulf Motorcycles - Repairs & Rentals | Delivery Bikes | Dubai, UAE
+          Motorcycle Repairs & Rentals | Delivery Bikes | Gulf Motorcycles Dubai
         </title>
         <meta name="robots" content="index, follow" />
         <meta
