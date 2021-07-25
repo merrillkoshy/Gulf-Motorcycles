@@ -111,7 +111,7 @@ const Navbar = (props) => {
               </div>
               <div className="mr-auto others-option">
                 <ul className="navbar-nav">
-                  <li className="header-search-box">
+                  {/* <li className="header-search-box">
                     <Link activeClassName="active" href="#">
                       <a
                         onClick={(e) => {
@@ -123,7 +123,7 @@ const Navbar = (props) => {
                         <i className="icofont-search-2"></i>
                       </a>
                     </Link>
-                  </li>
+                  </li> */}
                   <li onClick={handleDrawer}>
                     <div className="side-menu">
                       <span className="bar-1"></span>

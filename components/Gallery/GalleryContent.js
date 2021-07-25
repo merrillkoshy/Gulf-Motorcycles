@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+
 import Link from 'next/link';
 import Lightbox from 'react-image-lightbox';
 import firebase from "../../lib/firebaseConfig";
-import { useEffect } from 'react';
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 
 

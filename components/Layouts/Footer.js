@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-3 col-md-6">
             <div className="single-footer-widget">
-              <Link href="#">
+              <Link href="https://www.gulfmotorcycles.com" >
                 <a className="logo">
                   <img
                     title="Gulf Motorcycles - Repairs & Rentals"
@@ -16,15 +16,17 @@ const Footer = () => {
                     width="4000px"
                     height="4000px"
                   />
+                  <p>• Motorcycle Repairs & Service <br />• Motorcycle Rentals & Leasing <br />• Motorcycle Parts </p>
                 </a>
               </Link>
-              <p>Service • Leasing • Parts</p>
+
 
               <ul className="social-list">
                 <li>
                   <Link href="https://www.facebook.com/gulfmotorcyclerepairs/">
                     <a>
                       <i className="icofont-facebook"></i>
+                      gulfmotorcyclerepairs
                     </a>
                   </Link>
                 </li>
@@ -32,6 +34,7 @@ const Footer = () => {
                   <Link href="https://twitter.com/GulfRepairs">
                     <a>
                       <i className="icofont-twitter"></i>
+                      GulfRepairs
                     </a>
                   </Link>
                 </li>
@@ -39,13 +42,15 @@ const Footer = () => {
                   <Link href="https://www.instagram.com/gulfrepairs/">
                     <a>
                       <i className="icofont-instagram"></i>
+                      gulfrepairs
                     </a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="#">
+                  <Link href="https://www.linkedin.com/company/gulf-motorcycles">
                     <a>
                       <i className="icofont-linkedin"></i>
+                      gulf-motorcycles
                     </a>
                   </Link>
                 </li>

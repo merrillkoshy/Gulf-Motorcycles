@@ -128,7 +128,7 @@ class SideDrawer extends React.Component {
                       </Link>
                     </li>
                     <li>
-                      <Link href="#">
+                      <Link href="https://www.linkedin.com/company/gulf-motorcycles">
                         <a>
                           <i className="icofont-linkedin"></i>
                         </a>

@@ -33,7 +33,7 @@ export default function App({ Component, pageProps }) {
           content="sGdud-qNOXECWRhCiCnQHK1bhRqc2PJ6_NUVVPmmY_o"
         />
         <title>
-          Motorcycle Repairs & Rentals | Delivery Bikes | Gulf Motorcycles Dubai
+          Delivery Motorcycle Repairs & Rentals | Gulf Motorcycles Dubai
         </title>
         <meta name="robots" content="index, follow" />
         <meta
@@ -42,7 +42,7 @@ export default function App({ Component, pageProps }) {
         />
         <meta
           name="description"
-          content="Delivery bike repairs and service. New bikes for rent.  delivery box, bike wash, bajaj pulsar, honda unicorn, oil change, low cost motorcycle workshop in Dubai near me."
+          content="Gulf Motorcycles was started with the sole intention to offer the most affordable repair and maintenance services for delivery motorcycles in Dubai."
         />
 
         <meta
@@ -66,7 +66,7 @@ export default function App({ Component, pageProps }) {
           name="description"
           property="description"
           itemProp="description"
-          content="Delivery bike repairs and service. New bikes for rent.  delivery box, bike wash, bajaj pulsar, honda unicorn, oil change, low cost motorcycle workshop in Dubai near me."
+          content="Gulf Motorcycles was started with the sole intention to offer the most affordable repair and maintenance services for delivery motorcycles in Dubai."
         />
 
         {/* Open Graph */}
@@ -78,7 +78,7 @@ export default function App({ Component, pageProps }) {
         <meta
           name="og:description"
           property="og:description"
-          content="Delivery bike repairs and service. New bikes for rent.  delivery box, bike wash, bajaj pulsar, honda unicorn, oil change, low cost motorcycle workshop in Dubai near me."
+          content="Gulf Motorcycles was started with the sole intention to offer the most affordable repair and maintenance services for delivery motorcycles in Dubai."
         />
 
         {/* Import CSS for nprogress */}
@@ -110,7 +110,7 @@ export default function App({ Component, pageProps }) {
         <meta
           property="og:image:alt"
           name="og:image:alt"
-          content="Delivery bike repairs and service. New bikes for rent.  delivery box, bike wash, bajaj pulsar, honda unicorn, oil change, low cost motorcycle workshop in Dubai near me."
+          content="Gulf Motorcycles was started with the sole intention to offer the most affordable repair and maintenance services for delivery motorcycles in Dubai."
         />
         <meta
           property="og:site_name"
@@ -121,7 +121,7 @@ export default function App({ Component, pageProps }) {
         <meta property="og:type" name="og:type" content="website" />
         <meta
           itemProp="name"
-          content="Delivery bike repairs and service. New bikes for rent.  delivery box, bike wash, bajaj pulsar, honda unicorn, oil change, low cost motorcycle workshop in Dubai near me."
+          content="Gulf Motorcycles was started with the sole intention to offer the most affordable repair and maintenance services for delivery motorcycles in Dubai."
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -134,7 +134,7 @@ export default function App({ Component, pageProps }) {
         />
         <meta
           name="twitter:description"
-          content="Delivery bike repairs and service. New bikes for rent.  delivery box, bike wash, bajaj pulsar, honda unicorn, oil change, low cost motorcycle workshop in Dubai near me."
+          content="Gulf Motorcycles was started with the sole intention to offer the most affordable repair and maintenance services for delivery motorcycles in Dubai."
         />
         <meta name="twitter:app:country" content="ae" />
         <meta

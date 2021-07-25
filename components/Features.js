@@ -54,7 +54,7 @@ const Features = () => {
                         );
                       })}
                     </ul> */}
-                    <a href="#">
+                    <a >
                       <strong>Service cost</strong> : AED {service?.salesPrice}
                     </a>
                   </div>
