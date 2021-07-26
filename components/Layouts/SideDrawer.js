@@ -92,7 +92,7 @@ class SideDrawer extends React.Component {
                     <li>
                       <i className="icofont-email"></i>
                       Email
-                      <a>info@gulfmotorcycles.com</a>
+                      <span>info@gulfmotorcycles.com</span>
                     </li>
                     <li>
                       <i className="icofont-phone"></i>
