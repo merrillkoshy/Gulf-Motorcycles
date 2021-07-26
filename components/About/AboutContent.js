@@ -118,11 +118,11 @@ const AboutContent = () => {
         <img src="/images/shape7.png" alt="shape" />
       </div>
       <div className="shape3">
-        <img src="/images/cogwheel.svg" alt="img" style={{ opacity: 0.2 }} />
+        <img src="/images/cogwheel.svg" alt="img" className="floaters" />
       </div>
       <div className="bg-gray shape-1"></div>
       <div className="shape6">
-        <img src="/images/cogwheel.svg" alt="img" style={{ opacity: 0.2 }} />
+        <img src="/images/cogwheel.svg" alt="img" className="floaters" />
       </div>
       <div className="shape8 rotateme">
         <img src="/images/shape8.svg" alt="shape" />
@@ -134,7 +134,7 @@ const AboutContent = () => {
         <img src="/images/piston.svg" alt="shape" />
       </div>
       <div className="shape11 rotateme">
-        <img src="/images/wrench.svg" alt="shape" style={{ opacity: 0.2 }} />
+        <img src="/images/wrench.svg" alt="shape" className="floaters" />
       </div>
     </section>
   );

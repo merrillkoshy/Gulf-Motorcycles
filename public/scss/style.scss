@@ -120,6 +120,9 @@ img {
 			mix-blend-mode: screen;
 		}
 	}
+	&.floaters {
+		opacity: 0.2;
+	}
 }
 .d-table {
 	width: 100%;

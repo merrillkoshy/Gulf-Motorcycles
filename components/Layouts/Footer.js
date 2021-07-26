@@ -12,7 +12,7 @@ const Footer = () => {
                   <img
                     title="Gulf Motorcycles - Repairs & Rentals"
                     src="/images/logo-dark.png"
-                    alt="logo-light"
+                    alt="Gulf Motorcycles - Repairs & Rentals"
                     width="4000px"
                     height="4000px"
                   />

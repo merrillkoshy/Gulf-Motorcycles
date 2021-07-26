@@ -93,12 +93,12 @@ export default function App({ Component, pageProps }) {
         <meta
           name="og:url"
           property="og:url"
-          content="https://gulfmotorcycles.com"
+          content="https://www.gulfmotorcycles.com/"
         />
         <meta
           property="og:image:secure_url"
           name="og:image:secure_url"
-          content="https://gulfmotorcycles.com"
+          content="https://www.gulfmotorcycles.com/"
         />
         <meta
           property="og:image:type"

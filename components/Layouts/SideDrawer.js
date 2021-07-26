@@ -39,7 +39,7 @@ class SideDrawer extends React.Component {
                     <a>
                       <img
                         src="/images/logo-light.png"
-                        alt="logo"
+                        alt="Gulf Motorcycles - Repairs & Rentals"
                         width="4000px"
                         height="4000px"
                       />
@@ -92,7 +92,7 @@ class SideDrawer extends React.Component {
                     <li>
                       <i className="icofont-email"></i>
                       Email
-                      <span>info@gulfmotorcycles.com</span>
+                      <a>info@gulfmotorcycles.com</a>
                     </li>
                     <li>
                       <i className="icofont-phone"></i>

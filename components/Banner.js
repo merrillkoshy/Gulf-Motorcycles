@@ -77,7 +77,7 @@ const Banner = () => {
         <img
           src="/images/cogwheel.svg"
           alt="img"
-          style={{ opacity: 0.2 }}
+          className="floaters"
           width="120px"
           height="120px"
         />
@@ -89,7 +89,7 @@ const Banner = () => {
         <img
           src="/images/cogwheel.svg"
           alt="img"
-          style={{ opacity: 0.2 }}
+          className="floaters"
           width="120px"
           height="120px"
         />
@@ -102,7 +102,6 @@ const Banner = () => {
         <img
           src="/images/engine.svg"
           alt="shape"
-          style={{ width: "100px" }}
           width="100px"
           height="95px"
         />

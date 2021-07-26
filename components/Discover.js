@@ -39,7 +39,7 @@ const Discover = () => {
                 such as Bajaj Pulsar and Honda Unicorn.
               </p>
               <p>
-                "Affordability and quality service" is our motto. It is important to us that customers can rely on Gulf Motorcycles with a peace of mind, and most importantly, the peace of ride.
+                Handpicked for their talent with all kinds of work, our team of highly-trained mechanics undertake the best quality work for our customers ensuring that we remain within your budget expectations. "Affordability and quality service" is our motto. It is important to us that customers can rely on Gulf Motorcycles with a peace of mind, and most importantly, the peace of ride.
 
               </p>
               <ul>

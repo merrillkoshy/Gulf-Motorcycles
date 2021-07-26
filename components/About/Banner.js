@@ -12,13 +12,13 @@ const Banner = () => {
       </div>
 
       <div className="shape1">
-        <img src="/images/cogwheel.svg" alt="img" style={{ opacity: 0.2 }} />
+        <img src="/images/cogwheel.svg" alt="img" className="floaters" />
       </div>
       <div className="shape2">
         <img src="/images/bike.svg" alt="img" />
       </div>
       <div className="shape3">
-        <img src="/images/cogwheel.svg" alt="img" style={{ opacity: 0.2 }} />
+        <img src="/images/cogwheel.svg" alt="img" className="floaters" />
       </div>
 
       <div className="shape8 rotateme">
