@@ -33,6 +33,7 @@ export default function App({ Component, pageProps }) {
           content="sGdud-qNOXECWRhCiCnQHK1bhRqc2PJ6_NUVVPmmY_o"
         />
         <meta name="facebook-domain-verification" content="bbp3f8nhej3ev49m36u1rs8vb5j5s8" />
+        <meta name="p:domain_verify" content="f181ef3337e2e5c1cf4d5b97add2ca18" />
         <title>
           Delivery Motorcycle Repairs & Rentals | Gulf Motorcycles Dubai
         </title>
