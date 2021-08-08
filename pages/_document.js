@@ -15,6 +15,8 @@ class MyDocument extends Document {
         "https://www.facebook.com/gulfmotorcyclerepairs",
         "https://www.instagram.com/gulfrepairs/",
         "https://twitter.com/GulfRepairs",
+        "https://www.linkedin.com/company/gulf-motorcycles",
+        "https://www.pinterest.com/gulfmotorcyclerepairs"
       ],
     };
     const localBusinessStructuredData = {
@@ -34,33 +36,15 @@ class MyDocument extends Document {
       },
       geo: {
         "@type": "GeoCoordinates",
-        latitude: 25.122742,
-        longitude: 55.2240838,
+        latitude: 25.1225671,
+        longitude: 55.2259007,
       },
       url: "https://g.page/gulfMotorcycles",
       telephone: "+971567644951",
       openingHoursSpecification: [
         {
           "@type": "OpeningHoursSpecification",
-          dayOfWeek: ["Monday", "Tuesday"],
-          opens: "09:00",
-          closes: "21:00",
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: ["Wednesday", "Thursday", "Friday"],
-          opens: "09:00",
-          closes: "21:00",
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: "Saturday",
-          opens: "09:00",
-          closes: "21:00",
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: "Sunday",
+          dayOfWeek: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Saturday"],
           opens: "09:00",
           closes: "21:00",
         },
@@ -70,6 +54,8 @@ class MyDocument extends Document {
         "https://www.facebook.com/gulfmotorcyclerepairs",
         "https://www.instagram.com/gulfrepairs/",
         "https://twitter.com/GulfRepairs",
+        "https://www.linkedin.com/company/gulf-motorcycles",
+        "https://www.pinterest.com/gulfmotorcyclerepairs"
       ],
     };
 

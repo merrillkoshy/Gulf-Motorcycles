@@ -2101,7 +2101,7 @@ Features CSS
 	}
 }
 .single-holder-box {
-	box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
+	// box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
 	background: $white_color;
 	text-align: center;
 	border-radius: 5px;
@@ -2129,6 +2129,17 @@ Features CSS
 	}
 	&.mt-50 {
 		margin-top: 50px;
+	}
+	&:hover {
+		transition: 0.5s;
+		box-shadow: -11px 20px 17px #d9d9d9, 20px -11px 17px #ffffff;
+
+		border-radius: 10px;
+		-webkit-transform: rotateZ(-0.5deg);
+		-moz-transform: rotateZ(-0.5deg);
+		transform: skew(1deg, 1deg);
+
+		border-radius: 15px;
 	}
 }
 .features-holder-content {
@@ -2239,7 +2250,46 @@ Features CSS
 		}
 	}
 }
+// Masonary
+.photo-list {
+	width: 100%;
 
+	// margin: 20px 12%;
+	// margin-top: 4cm;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.photo-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 300px;
+
+	img {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: auto;
+		border: 4px double rgba(0, 0, 0, 0.12);
+		transition: 0.5s;
+		&:hover {
+			transition: 0.5s;
+			box-shadow: -11px 20px 17px #393939, 20px -11px 17px #4d4d4d;
+			width: 95%;
+			border-radius: 10px;
+			-webkit-transform: rotateZ(-1deg);
+			-moz-transform: rotateZ(-1deg);
+			transform: skew(2deg, 2deg);
+			margin: 0;
+			padding: 0;
+			border-radius: 15px;
+		}
+	}
+}
 /*================================================
 Product New Features CSS
 =================================================*/
