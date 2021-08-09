@@ -94,9 +94,9 @@ const AboutContent = () => {
 								to us that customers can rely on Gulf Motorcycles with a peace
 								of mind, and most importantly, the peace of ride.
 							</p>
-							{/* <Link href="/services">
-                <a className="btn btn-primary">Our Services</a>
-              </Link> */}
+							<Link href="/services">
+								<a className="btn btn-primary">Our Services</a>
+							</Link>
 						</div>
 					</div>
 				</div>
