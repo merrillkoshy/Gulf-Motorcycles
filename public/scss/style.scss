@@ -426,6 +426,9 @@ Navbar CSS
 			.brand-sub {
 				color: $white-color;
 			}
+			&:hover {
+				cursor: pointer;
+			}
 		}
 		ul {
 			list-style-type: none;
@@ -2410,6 +2413,7 @@ Services CSS
 	&:hover {
 		transform: translateY(-8px);
 		box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+		cursor: pointer;
 
 		.icon {
 			background: $template_color;

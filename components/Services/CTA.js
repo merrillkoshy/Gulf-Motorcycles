@@ -33,22 +33,24 @@ const CTA = ({ serviceName }) => {
 				>
 					<a>
 						<i
+							aria-hidden
 							style={{
 								fontSize: "28px",
 								cursor: "pointer",
 							}}
-							class="fab fa-whatsapp"
+							className="fab fa-whatsapp"
 						></i>
 					</a>
 				</Link>
 				<Link href="tel:971567644951">
 					<a>
 						<i
+							aria-hidden
 							style={{
 								fontSize: "28px",
 								cursor: "pointer",
 							}}
-							class="fas fa-phone ml-3"
+							className="fas fa-phone ml-3"
 						></i>
 					</a>
 				</Link>

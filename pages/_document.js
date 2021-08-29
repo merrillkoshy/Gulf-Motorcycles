@@ -30,7 +30,7 @@ class MyDocument extends Document {
 			address: {
 				"@type": "PostalAddress",
 				streetAddress:
-					"Al Qouz -3, Opposite Al Ahli Driving Centre, MK Ghanim Compound, Unit 45",
+					"Al Qouz -3, Opposite Al Ahli Driving Centre, MK Ghanim Compound",
 				addressLocality: "Dubai",
 				addressRegion: "Dubai",
 				addressCountry: "AE",

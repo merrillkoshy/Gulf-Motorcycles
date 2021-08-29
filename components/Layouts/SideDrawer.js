@@ -83,22 +83,39 @@ class SideDrawer extends React.Component {
 										<li>
 											<i className="icofont-google-map"></i>
 											Address
-											<span>
-												Gulf Motorcycles, Al Qouz -3, Opposite Al Ahli Driving
-												Centre, MK Ghanim Compound, Unit 45, Dubai, United Arab
-												Emirates
-											</span>
+											<a href="https://g.page/gulfmotorcycles">
+												<address
+													itemScope
+													itemType="http://schema.org/PostalAddress"
+												>
+													<span itemProp="streetAddress">
+														Gulf Motorcycles, Opposite Al Ahli Driving Centre,
+														MK Ghanim Compound
+													</span>
+													<span itemProp="addressLocality">Al Qouz -3</span>
+													<span itemProp="addressRegion">Dubai</span>
+													<span itemProp="addressCountry">
+														United Arab Emirates
+													</span>
+												</address>
+											</a>
 										</li>
 										<li>
 											<i className="icofont-email"></i>
 											Email
-											<span>info@gulfmotorcycles.com</span>
+											<a href="mailto:info@gulfmotorcycles.com">
+												<span>info@gulfmotorcycles.com</span>
+											</a>
 										</li>
 										<li>
 											<i className="icofont-phone"></i>
 											Phone
-											<span>04 548 9786</span>
-											<span>+971 567 644 951</span>
+											<span>
+												<a href="tel:+97145489786">+971 4 548 9786</a>
+											</span>
+											<span>
+												<a href="tel:+971567644951">+971 5 6764 4951</a>
+											</span>
 										</li>
 									</ul>
 								</div>
@@ -109,7 +126,7 @@ class SideDrawer extends React.Component {
 										<li>
 											<Link href="https://www.tiktok.com/@gulfmotorcycles">
 												<a>
-													<i class="fab fa-tiktok"></i>
+													<i aria-hidden className="fab fa-tiktok"></i>
 												</a>
 											</Link>
 										</li>

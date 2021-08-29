@@ -51,7 +51,7 @@ const Footer = () => {
 								<li>
 									<Link href="https://www.tiktok.com/@gulfmotorcycles">
 										<a>
-											<i class="fab fa-tiktok"></i>
+											<i aria-hidden className="fab fa-tiktok"></i>
 											gulfmotorcycles
 										</a>
 									</Link>
@@ -101,7 +101,7 @@ const Footer = () => {
 									<a href="tel:+97145489786">+971 4 548 9786</a>
 								</li>
 								<li>
-									<a href="tel:+971567644951">+971 567 644 951</a>
+									<a href="tel:+971567644951">+971 5 6764 4951</a>
 								</li>
 								<li>
 									<a href="mailto:info@gulfmotorcycles.com">
@@ -109,8 +109,15 @@ const Footer = () => {
 									</a>
 								</li>
 								<li>
-									Gulf Motorcycles, Al Qouz -3, Opposite Al Ahli Driving Centre,
-									MK Ghanim Compound, Unit 45, Dubai, United Arab Emirates
+									<address itemScope itemType="http://schema.org/PostalAddress">
+										<span itemProp="streetAddress">
+											Gulf Motorcycles, Opposite Al Ahli Driving Centre, MK
+											Ghanim Compound
+										</span>
+										, <span itemProp="addressLocality">Al Qouz -3</span>,{" "}
+										<span itemProp="addressRegion">Dubai</span>,{" "}
+										<span itemProp="addressCountry">United Arab Emirates</span>
+									</address>
 								</li>
 							</ul>
 						</div>

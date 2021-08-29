@@ -121,8 +121,8 @@ const ServiceContent = () => {
 			<div className="container">
 				<div className="row">
 					{services &&
-						services.map((service) => {
-							return <CTA serviceName={service} />;
+						services.map((service, i) => {
+							return <CTA key={i + service} serviceName={service} />;
 						})}
 				</div>
 			</div>

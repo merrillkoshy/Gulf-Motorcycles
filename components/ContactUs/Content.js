@@ -37,11 +37,22 @@ class Content extends Component {
 								<h3>We are Here</h3>
 								<Link href="https://g.page/gulfMotorcycles">
 									<a>
-										<p>
-											Gulf Motorcycles, Al Qouz -3, Opposite Al Ahli Driving
-											Centre, MK Ghanim Compound, Unit 45, Dubai, United Arab
-											Emirates
-										</p>{" "}
+										<address
+											itemScope
+											itemType="http://schema.org/PostalAddress"
+										>
+											<span itemProp="streetAddress">
+												Gulf Motorcycles, Opposite Al Ahli Driving Centre, MK
+												Ghanim Compound
+											</span>
+											,
+											<br />
+											<span itemProp="addressLocality">Al Qouz -3</span>,{" "}
+											<span itemProp="addressRegion">Dubai</span>,{" "}
+											<span itemProp="addressCountry">
+												United Arab Emirates
+											</span>
+										</address>
 									</a>
 								</Link>
 							</div>
@@ -55,12 +66,12 @@ class Content extends Component {
 								<h3>Call Here</h3>
 								<p>
 									<Link href="#">
-										<a>+971 567 644 951</a>
+										<a>+971 5 6764 4951</a>
 									</Link>
 								</p>
 								<p>
 									<Link href="#">
-										<a>04 548 9786</a>
+										<a>+971 4 548 9786</a>
 									</Link>
 								</p>
 							</div>

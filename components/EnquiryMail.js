@@ -1,5 +1,5 @@
 const enquiryMail = ({ name, content, number }) => {
-  return `
+	return `
   <html><head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
@@ -16,10 +16,10 @@ const enquiryMail = ({ name, content, number }) => {
 !important}.sub-story__image{float:left !important;width:200px}.sub-story__content{margin-top:30px !important;margin-left:200px !important}}@media only screen and (max-width: 550px){.sub-story__inner{padding-left:30px !important}.sub-story__image,.sub-story__content{margin:0 auto !important;float:none !important;text-align:center}.sub-story .button{padding-left:0 !important}}@media only screen and (max-width: 400px){.featured-story--top table,.featured-story--top td{text-align:left}.featured-story--top__heading td,.sub-story__heading td{font-size:18px !important}.featured-story--bottom:nth-child(2) .featured-story--bottom__inner{padding-top:10px
 !important}.featured-story--bottom__inner{padding-top:20px !important}.featured-story--bottom__heading td{font-size:28px !important;line-height:32px !important}.featured-story__copy td,.sub-story__copy td{font-size:14px !important;line-height:20px !important}.sub-story table,.sub-story td{text-align:center}.sub-story__hero img{width:100px !important;margin:0 auto}}@media only screen and (max-width: 400px){.footer td{font-size:12px !important;line-height:16px !important}}
    @media screen and (max-width:600px) {
-  table[class="columns"] {
+  table[className="columns"] {
       margin: 0 auto !important;float:none !important;padding:10px 0 !important;
   }
-  td[class="left"] {
+  td[className="left"] {
    padding: 0px 0 !important;
   </style>
 
@@ -29,44 +29,44 @@ const enquiryMail = ({ name, content, number }) => {
 div.preheader 
 { display: none !important; } 
 </style>
-<div class="preheader" style="font-size: 1px; display: none !important;">Mute videos until you’re ready</div>
+<div className="preheader" style="font-size: 1px; display: none !important;">Mute videos until you’re ready</div>
   <table id="backgroundTable" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#e1e1e1;">
       <tbody><tr>
-          <td class="body" align="center" valign="top" style="background: #434343;" width="100%">
+          <td className="body" align="center" valign="top" style="background: #434343;" width="100%">
               <table cellpadding="0" cellspacing="0">
                   <tbody><tr>
                       <td width="640">
                           </td>
                   </tr>
                   <tr>
-                      <td class="main" width="640" align="center" style="padding: 0 10px;">
-                          <table style="min-width: 100%; " class="stylingblock-content-wrapper" width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td class="stylingblock-content-wrapper camarker-inner"><table cellspacing="0" cellpadding="0">
+                      <td className="main" width="640" align="center" style="padding: 0 10px;">
+                          <table style="min-width: 100%; " className="stylingblock-content-wrapper" width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td className="stylingblock-content-wrapper camarker-inner"><table cellspacing="0" cellpadding="0">
 <tbody><tr>
 <td width="640" align="left">
  <table width="100%" cellspacing="0" cellpadding="0">
   <tbody><tr>
-   <td class="header header--left" style="padding: 20px 10px;" align="left">
-    <a><img class="header__logo" src="https://gulfmotorcycles.com/images/EmailHeader-01.png" alt="Firefox" style="display: block; border: 0;" width="158" height="auto"></a>
+   <td className="header header--left" style="padding: 20px 10px;" align="left">
+    <a><img className="header__logo" src="https://gulfmotorcycles.com/images/EmailHeader-01.png" alt="Firefox" style="display: block; border: 0;" width="158" height="auto"></a>
    </td>
   </tr>
  </tbody></table>
 </td>
 </tr>
-</tbody></table></td></tr></tbody></table><table style="min-width: 100%; " class="stylingblock-content-wrapper" width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td class="stylingblock-content-wrapper camarker-inner"><table class="featured-story featured-story--top" cellspacing="0" cellpadding="0">
+</tbody></table></td></tr></tbody></table><table style="min-width: 100%; " className="stylingblock-content-wrapper" width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td className="stylingblock-content-wrapper camarker-inner"><table className="featured-story featured-story--top" cellspacing="0" cellpadding="0">
 <tbody><tr>
 <td style="padding-bottom: 20px;">
  <table cellspacing="0" cellpadding="0">
   <tbody><tr>
-   <td class="featured-story__inner" style="background: #fff;">
+   <td className="featured-story__inner" style="background: #fff;">
     <table cellspacing="0" cellpadding="0">
      <tbody><tr>
       
      </tr>
      <tr>
-      <td class="featured-story__content-inner" style="padding: 32px 30px 45px;">
+      <td className="featured-story__content-inner" style="padding: 32px 30px 45px;">
        <table cellspacing="0" cellpadding="0">
         <tbody><tr>
-         <td class="featured-story__heading featured-story--top__heading" style="background: #fff;" width="640" align="left">
+         <td className="featured-story__heading featured-story--top__heading" style="background: #fff;" width="640" align="left">
           <table cellspacing="0" cellpadding="0">
            <tbody><tr>
             <td style="font-family: Geneva, Tahoma, Verdana, sans-serif; font-size: 22px; color: #464646;" width="400" align="left">
@@ -74,7 +74,7 @@ div.preheader
             </td>
            </tr>
   <tr>
-         <td class="featured-story__copy" style="background: #fff;" width="640" align="center">
+         <td className="featured-story__copy" style="background: #fff;" width="640" align="center">
           <table cellspacing="0" cellpadding="0">
            <tbody><tr>
             <td style="font-family: Ubuntu, Tahoma, Verdana, sans-serif; font-size: 16px; line-height: 22px; color: #555555; padding-top: 16px;" align="left">${content}<br></td>
@@ -86,7 +86,7 @@ div.preheader
          </td>
         </tr>
         <tr>
-         <td class="featured-story__copy" style="background: #fff;" width="640" align="center">
+         <td className="featured-story__copy" style="background: #fff;" width="640" align="center">
           <table cellspacing="0" cellpadding="0">
            <tbody><tr>
             <td style="font-family: Ubuntu, Tahoma, Verdana, sans-serif; font-size: 16px; line-height: 22px; color: #555555; padding-top: 16px;" align="left">${name} | ${number}<br></td>
@@ -107,7 +107,7 @@ div.preheader
 </tbody></table></td></tr></tbody></table></td>
                   </tr>
                   <tr>
-                   <td class="footer" width="640" align="center" style="padding-top: 10px;">
+                   <td className="footer" width="640" align="center" style="padding-top: 10px;">
                     <table cellspacing="0" cellpadding="0">
                      <tbody><tr>
                       <td align="center" style="font-family: Geneva, Tahoma, Verdana, sans-serif;font-size: 14px;line-height: 18px;color: #ffffff;padding: 0 20px 40px;">

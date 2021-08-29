@@ -55,16 +55,25 @@ const AboutContent = () => {
 										alt="Gulf Motorcycle Repairs Dubai"
 									/>
 									<h3>Contact Us</h3>
-									<p>
-										We are here:
-										<Link href="https://g.page/gulfMotorcycles">
-											<a>
-												Gulf Motorcycles, Al Qouz -3, Opposite Al Ahli Driving
-												Centre, MK Ghanim Compound, Unit 45. Dubai, United Arab
-												Emirates
-											</a>
-										</Link>
-									</p>
+									We are here:
+									<Link href="https://g.page/gulfMotorcycles">
+										<a>
+											<address
+												itemScope
+												itemType="http://schema.org/PostalAddress"
+											>
+												<span itemProp="streetAddress">
+													Gulf Motorcycles, Opposite Al Ahli Driving Centre, MK
+													Ghanim Compound
+												</span>
+												<span itemProp="addressLocality">Al Qouz -3</span>
+												<span itemProp="addressRegion">Dubai</span>
+												<span itemProp="addressCountry">
+													United Arab Emirates
+												</span>
+											</address>
+										</a>
+									</Link>
 								</div>
 							</div>
 						</div>
