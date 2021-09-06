@@ -6,9 +6,9 @@ import Masonry from "react-masonry-component";
 import InfiniteScroll from "react-infinite-scroll-component";
 
 const GalleryContent = () => {
-	const [photoIndex, setPhotoIndex] = useState(0);
+	const [photoIndex, setPhotoIndex] = useState<number>(0);
 	const [isOpenImage, setIsOpenImage] = useState(false);
-	const [images, setImages] = useState([]);
+	const [images, setImages] = useState<Array<any>>([]);
 
 	const masonryOptions = {
 		fitWidth: false,
@@ -27,9 +27,11 @@ const GalleryContent = () => {
 			return imageRef.getDownloadURL();
 		});
 
-		Promise.allSettled(urlPromises).then((values) => {
-			return setImages(values);
-		});
+		Promise.allSettled(urlPromises).then(
+			(values: PromiseSettledResult<{ value: string }>[]) => {
+				return setImages(values);
+			}
+		);
 	};
 
 	const refresh = () => {
@@ -48,8 +50,8 @@ const GalleryContent = () => {
 					<p>
 						Here are some great shots on our fully-equipped motorcycle workshop
 						in Al Quoz Industrial-3. We are specialists in delivery motorcycle
-						repairs, especially on Bajaj Pulsar and Honda Unicorn with the most
-						affordable pricing in Dubai!{" "}
+						repairs, especially on Bajaj Pulsar, Honda Unicorn, Yamaha YBR 125,
+						Benelli TNT 150, with the most affordable pricing in Dubai!{" "}
 					</p>
 				</div>
 				<div
@@ -102,12 +104,12 @@ const GalleryContent = () => {
 										// >
 										<li className={`photo-item`} key={i + "gallery"}>
 											<img
-                                                className="filter-juno"
-                                                onClick={(e) => {
-                                                    e.preventDefault();
-                                                    setIsOpenImage(true);
-                                                    setPhotoIndex(i);
-                                                }}
+												className="filter-juno"
+												onClick={(e) => {
+													e.preventDefault();
+													setIsOpenImage(true);
+													setPhotoIndex(i);
+												}}
 												src={imgUrl?.value}
 												alt="motorcycle repairs dubai"
 												style={{
@@ -117,8 +119,6 @@ const GalleryContent = () => {
 												}}
 												loading="lazy"
 											/>
-
-											
 										</li>
 										// </div>
 									);
@@ -129,10 +129,8 @@ const GalleryContent = () => {
 					{isOpenImage && (
 						<Lightbox
 							mainSrc={images[photoIndex]?.value}
-							nextSrc={images[(photoIndex + 1)?.value % images.length]}
-							prevSrc={
-								images[(photoIndex + images.length - 1)?.value % images.length]
-							}
+							nextSrc={images[(photoIndex + 1) % images.length]}
+							prevSrc={images[(photoIndex + images.length - 1) % images.length]}
 							onCloseRequest={() => setIsOpenImage(false)}
 							onMovePrevRequest={() =>
 								setPhotoIndex((photoIndex + images.length - 1) % images.length)

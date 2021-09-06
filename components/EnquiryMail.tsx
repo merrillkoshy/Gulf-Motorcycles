@@ -122,3 +122,4 @@ div.preheader
   </tbody></table>
 </body></html>`;
 };
+export default enquiryMail;

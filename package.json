@@ -51,7 +51,12 @@
     "wowjs": "^1.1.3"
   },
   "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.10",
+    "@types/react": "^17.0.20",
+    "@types/react-dom": "^17.0.9",
     "file-loader": "^6.2.0",
+    "typescript": "^4.4.2",
     "url-loader": "^4.1.1"
   }
 }

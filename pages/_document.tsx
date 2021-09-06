@@ -182,7 +182,7 @@ class MyDocument extends Document {
 					/>
 					<script
 						src="https://kit.fontawesome.com/6e0efe9f93.js"
-						crossorigin="anonymous"
+						crossOrigin="anonymous"
 					></script>
 				</body>
 			</Html>
