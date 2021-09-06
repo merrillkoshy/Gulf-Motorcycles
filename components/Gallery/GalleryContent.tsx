@@ -63,7 +63,7 @@ const GalleryContent = () => {
 				>
 					<InfiniteScroll
 						dataLength={images?.length}
-						// next={fetchData}
+						next={() => null}
 						hasMore={false}
 						loader={<h4>Loading...</h4>}
 						endMessage={
