@@ -1,12 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
 
-const SideDrawer = () => {
-	const [drawer, setDrawer] = useState(false);
-
-	const closeDrawer = () => {
-		setDrawer(!drawer);
-	};
+const SideDrawer = ({ closeDrawer }: { closeDrawer: () => void }) => {
 	return (
 		<div className="sidebar-modal">
 			<div

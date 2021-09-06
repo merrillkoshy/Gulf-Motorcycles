@@ -4,9 +4,9 @@ import Link from "../../utils/ActiveLink";
 import SideDrawer from "./SideDrawer";
 import SearchForm from "./SearchForm";
 
-const Navbar = (props) => {
+const Navbar = () => {
 	const [_isMounted, setIsMounted] = useState(false);
-	const [drawer, setDrawer] = useState(false);
+	const [drawer, setDrawer] = useState<boolean>(false);
 	const [searchForm, setSearchForm] = useState(false);
 	const [collapsed, setCollapsed] = useState(true);
 
@@ -31,7 +31,7 @@ const Navbar = (props) => {
 		setCollapsed(!collapsed);
 	};
 
-	const handleDrawer = () => {
+	const handleDrawer = (): void => {
 		setDrawer(!drawer);
 	};
 
@@ -138,7 +138,7 @@ const Navbar = (props) => {
 				</div>
 			</header>
 
-			{drawer ? <SideDrawer onClick={handleDrawer} /> : ""}
+			{drawer ? <SideDrawer closeDrawer={handleDrawer} /> : ""}
 			{searchForm ? <SearchForm onClick={handleSearchForm} /> : ""}
 		</React.Fragment>
 	);
