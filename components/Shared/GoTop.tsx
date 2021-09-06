@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { useEffect } from "react-transition-group/node_modules/@types/react";
+import React, { useState, useEffect } from "react";
 
 const GoTop = ({ scrollStepInPx, delayInMs }) => {
 	const [_isMounted, setIsMounted] = useState(false);
